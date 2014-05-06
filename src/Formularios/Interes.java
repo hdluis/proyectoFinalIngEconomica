@@ -81,7 +81,7 @@ void borrarCasillas()
         getContentPane().add(txtInteres);
         txtInteres.setBounds(70, 140, 40, 30);
         getContentPane().add(txtPrincipal);
-        txtPrincipal.setBounds(70, 110, 60, 30);
+        txtPrincipal.setBounds(70, 110, 90, 30);
         getContentPane().add(txtPeriodos);
         txtPeriodos.setBounds(70, 170, 40, 30);
 
@@ -105,7 +105,7 @@ void borrarCasillas()
             }
         });
         getContentPane().add(bntBorrar);
-        bntBorrar.setBounds(220, 110, 63, 23);
+        bntBorrar.setBounds(220, 110, 70, 23);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
