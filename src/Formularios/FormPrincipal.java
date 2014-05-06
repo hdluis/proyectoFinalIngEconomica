@@ -48,6 +48,7 @@ public class FormPrincipal extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        BotonPdeA = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -152,6 +153,15 @@ public class FormPrincipal extends javax.swing.JFrame {
         getContentPane().add(jLabel6);
         jLabel6.setBounds(10, 340, 50, 30);
 
+        BotonPdeA.setText("P/A  &  A/P");
+        BotonPdeA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonPdeAActionPerformed(evt);
+            }
+        });
+        getContentPane().add(BotonPdeA);
+        BotonPdeA.setBounds(10, 470, 120, 23);
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Principal.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 800, 530);
@@ -177,8 +187,8 @@ public class FormPrincipal extends javax.swing.JFrame {
 
         setJMenuBar(jMenuBar1);
 
-        java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
-        setBounds((screenSize.width-815)/2, (screenSize.height-585)/2, 815, 585);
+        setSize(new java.awt.Dimension(815, 585));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
@@ -208,6 +218,13 @@ public class FormPrincipal extends javax.swing.JFrame {
        Regla72 formre = new Regla72();
        formre.setVisible(true);
     }//GEN-LAST:event_btnReglaActionPerformed
+
+    private void BotonPdeAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonPdeAActionPerformed
+       FSU  formularioF = new FSU();
+       {
+          formularioF.setVisible(true);
+       }
+    }//GEN-LAST:event_BotonPdeAActionPerformed
 
     public static void main(String args[]) {
   
@@ -240,6 +257,7 @@ public class FormPrincipal extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BotonPdeA;
     private javax.swing.JButton btnFlujoEfectivo;
     private javax.swing.JButton btnInteres;
     private javax.swing.JButton btnRegla;
