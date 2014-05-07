@@ -49,6 +49,7 @@ public class FormPrincipal extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         BotonPdeA = new javax.swing.JButton();
+        BotonFdeA = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -162,6 +163,15 @@ public class FormPrincipal extends javax.swing.JFrame {
         getContentPane().add(BotonPdeA);
         BotonPdeA.setBounds(10, 470, 120, 23);
 
+        BotonFdeA.setText("F/A  & F/A");
+        BotonFdeA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonFdeAActionPerformed(evt);
+            }
+        });
+        getContentPane().add(BotonFdeA);
+        BotonFdeA.setBounds(10, 500, 120, 23);
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Principal.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 800, 530);
@@ -226,6 +236,11 @@ public class FormPrincipal extends javax.swing.JFrame {
        }
     }//GEN-LAST:event_BotonPdeAActionPerformed
 
+    private void BotonFdeAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonFdeAActionPerformed
+        Amortizacion formamortizacion = new Amortizacion();
+        formamortizacion.setVisible(true);
+    }//GEN-LAST:event_BotonFdeAActionPerformed
+
     public static void main(String args[]) {
   
         try {
@@ -257,6 +272,7 @@ public class FormPrincipal extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BotonFdeA;
     private javax.swing.JButton BotonPdeA;
     private javax.swing.JButton btnFlujoEfectivo;
     private javax.swing.JButton btnInteres;
