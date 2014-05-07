@@ -45,7 +45,6 @@ public class FormPrincipal extends javax.swing.JFrame {
         btnRegla = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         BotonPdeA = new javax.swing.JButton();
@@ -100,7 +99,7 @@ public class FormPrincipal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnSalir);
-        btnSalir.setBounds(690, 410, 70, 60);
+        btnSalir.setBounds(730, 30, 50, 50);
 
         btnInteres.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/coins2.png"))); // NOI18N
         btnInteres.addActionListener(new java.awt.event.ActionListener() {
@@ -121,6 +120,7 @@ public class FormPrincipal extends javax.swing.JFrame {
         btnRegla.setBounds(10, 370, 50, 50);
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(239, 241, 194));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Regla del 72"); // NOI18N
         jLabel3.setToolTipText("");
@@ -129,18 +129,14 @@ public class FormPrincipal extends javax.swing.JFrame {
         jLabel3.getAccessibleContext().setAccessibleName("Valor del Dinero \nen el Tiempo");
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(239, 241, 194));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Flujo de Efectivo");
         getContentPane().add(jLabel4);
         jLabel4.setBounds(0, 190, 110, 30);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Salir");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(700, 470, 50, 14);
-
         jLabel5.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(239, 241, 194));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Valor del Dinero en el Tiempo"); // NOI18N
         jLabel5.setToolTipText("");
@@ -148,6 +144,7 @@ public class FormPrincipal extends javax.swing.JFrame {
         jLabel5.setBounds(10, 270, 170, 30);
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(239, 241, 194));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Interes"); // NOI18N
         jLabel6.setToolTipText("");
@@ -281,7 +278,6 @@ public class FormPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton btnValorDinero;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

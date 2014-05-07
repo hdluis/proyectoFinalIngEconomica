@@ -110,7 +110,7 @@ void inhabilitarCasillas()
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo2.jpg"))); // NOI18N
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(0, -20, 400, 290);
+        jLabel3.setBounds(0, -10, 400, 270);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
