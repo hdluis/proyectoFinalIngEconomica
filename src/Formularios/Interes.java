@@ -62,6 +62,7 @@ void borrarCasillas()
         getContentPane().add(jLabel4);
         jLabel4.setBounds(20, 110, 60, 30);
 
+        cmbInteres.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Seleccionar" }));
         cmbInteres.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbInteresActionPerformed(evt);
