@@ -1,5 +1,6 @@
 package Formularios;
 
+import java.text.DecimalFormat;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -235,8 +236,10 @@ public class Amortizacion extends javax.swing.JFrame {
                 if(porcentaje>0) // por regla
                 {
                     p=A*((Math.pow((1+i),anio)-1)/(i));
-                    float p2=(float)p;
-                    TxtResultado.setText(Float.toString(p2)); // mostramos el resultado en txtbox
+                     p = Math.round(p*Math.pow(10,4))/Math.pow(10,4);
+                    
+                   
+                    TxtResultado.setText(Double.toString(p)); // mostramos el resultado en txtbox
                     // ahora preparamos las variables para mandar a graficar
                     int anioinicio=0, aniofinal=anio, TotalAnios=anio+1;
                     String[] Tipo = new String[25];
@@ -244,7 +247,7 @@ public class Amortizacion extends javax.swing.JFrame {
                     double [] Cantidad = new double[25];
                     //asignamoms valores al evento en el año 0
                     Anio[anio+1]=anio;
-                    Cantidad[anio+1]=(int)p2;
+                    Cantidad[anio+1]=p;
                     Tipo[anio+1]="Entrada";
                     //asignamos valores de A
                     for(int j=1;j<=anio;j++)
