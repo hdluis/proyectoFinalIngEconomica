@@ -31,6 +31,14 @@ public class FormPrincipal extends javax.swing.JFrame {
         btnRegla.setOpaque(false);
         btnRegla.setContentAreaFilled(false);
         btnRegla.setBorderPainted(false);
+        
+        btnInterpolacion.setOpaque(false);
+        btnInterpolacion.setContentAreaFilled(false);
+        btnInterpolacion.setBorderPainted(false);
+        
+        BotonFdeA.setOpaque(false);
+        BotonFdeA.setContentAreaFilled(false);
+        BotonFdeA.setBorderPainted(false);
     }
 
     @SuppressWarnings("unchecked")
@@ -47,9 +55,11 @@ public class FormPrincipal extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         BotonPdeA = new javax.swing.JButton();
         BotonFdeA = new javax.swing.JButton();
-        botoninterpolacion = new javax.swing.JButton();
+        btnInterpolacion = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -123,10 +133,10 @@ public class FormPrincipal extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(239, 241, 194));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Regla del 72"); // NOI18N
+        jLabel3.setText("Amortizaciones"); // NOI18N
         jLabel3.setToolTipText("");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(250, 250, 70, 30);
+        jLabel3.setBounds(450, 250, 90, 30);
         jLabel3.getAccessibleContext().setAccessibleName("Valor del Dinero \nen el Tiempo");
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -147,10 +157,26 @@ public class FormPrincipal extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(239, 241, 194));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("Interes"); // NOI18N
+        jLabel6.setText("Interpolacion"); // NOI18N
         jLabel6.setToolTipText("");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(130, 250, 50, 30);
+        jLabel6.setBounds(130, 350, 80, 30);
+
+        jLabel7.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(239, 241, 194));
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("Interes"); // NOI18N
+        jLabel7.setToolTipText("");
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(130, 250, 50, 30);
+
+        jLabel8.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(239, 241, 194));
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("Regla del 72"); // NOI18N
+        jLabel8.setToolTipText("");
+        getContentPane().add(jLabel8);
+        jLabel8.setBounds(250, 250, 70, 30);
 
         BotonPdeA.setText("P/A  &  A/P");
         BotonPdeA.addActionListener(new java.awt.event.ActionListener() {
@@ -159,25 +185,25 @@ public class FormPrincipal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(BotonPdeA);
-        BotonPdeA.setBounds(460, 120, 90, 50);
+        BotonPdeA.setBounds(440, 120, 90, 50);
 
-        BotonFdeA.setText("F/A  & F/A");
+        BotonFdeA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/campaign2.png"))); // NOI18N
         BotonFdeA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotonFdeAActionPerformed(evt);
             }
         });
         getContentPane().add(BotonFdeA);
-        BotonFdeA.setBounds(460, 200, 90, 40);
+        BotonFdeA.setBounds(450, 200, 60, 50);
 
-        botoninterpolacion.setText("Interpolacion");
-        botoninterpolacion.addActionListener(new java.awt.event.ActionListener() {
+        btnInterpolacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/businessman134.png"))); // NOI18N
+        btnInterpolacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botoninterpolacionActionPerformed(evt);
+                btnInterpolacionActionPerformed(evt);
             }
         });
-        getContentPane().add(botoninterpolacion);
-        botoninterpolacion.setBounds(160, 490, 110, 23);
+        getContentPane().add(btnInterpolacion);
+        btnInterpolacion.setBounds(130, 290, 70, 60);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Principal.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -248,10 +274,10 @@ public class FormPrincipal extends javax.swing.JFrame {
         formamortizacion.setVisible(true);
     }//GEN-LAST:event_BotonFdeAActionPerformed
 
-    private void botoninterpolacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botoninterpolacionActionPerformed
+    private void btnInterpolacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInterpolacionActionPerformed
         interpolarizacion  interpolarizacion = new interpolarizacion ();
         interpolarizacion.setVisible(true);
-    }//GEN-LAST:event_botoninterpolacionActionPerformed
+    }//GEN-LAST:event_btnInterpolacionActionPerformed
 
     public static void main(String args[]) {
   
@@ -286,9 +312,9 @@ public class FormPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BotonFdeA;
     private javax.swing.JButton BotonPdeA;
-    private javax.swing.JButton botoninterpolacion;
     private javax.swing.JButton btnFlujoEfectivo;
     private javax.swing.JButton btnInteres;
+    private javax.swing.JButton btnInterpolacion;
     private javax.swing.JButton btnRegla;
     private javax.swing.JButton btnSalir;
     private javax.swing.JButton btnValorDinero;
@@ -298,6 +324,8 @@ public class FormPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
