@@ -60,6 +60,7 @@ public class FormPrincipal extends javax.swing.JFrame {
         btnInteres = new javax.swing.JButton();
         btnRegla = new javax.swing.JButton();
         btnGrad = new javax.swing.JButton();
+        btnTasas = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -67,6 +68,7 @@ public class FormPrincipal extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         BotonPdeA = new javax.swing.JButton();
         BotonFdeA = new javax.swing.JButton();
         btnInterpolacion = new javax.swing.JButton();
@@ -149,13 +151,22 @@ public class FormPrincipal extends javax.swing.JFrame {
         getContentPane().add(btnGrad);
         btnGrad.setBounds(380, 200, 60, 50);
 
+        btnTasas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/email10.png"))); // NOI18N
+        btnTasas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTasasActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnTasas);
+        btnTasas.setBounds(470, 200, 60, 50);
+
         jLabel3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(239, 241, 194));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Gradientes"); // NOI18N
+        jLabel3.setText("Tasas"); // NOI18N
         jLabel3.setToolTipText("");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(380, 250, 70, 30);
+        jLabel3.setBounds(460, 250, 60, 30);
         jLabel3.getAccessibleContext().setAccessibleName("Valor del Dinero \nen el Tiempo");
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -205,6 +216,14 @@ public class FormPrincipal extends javax.swing.JFrame {
         getContentPane().add(jLabel9);
         jLabel9.setBounds(380, 170, 90, 30);
 
+        jLabel10.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(239, 241, 194));
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel10.setText("Gradientes"); // NOI18N
+        jLabel10.setToolTipText("");
+        getContentPane().add(jLabel10);
+        jLabel10.setBounds(380, 250, 70, 30);
+
         BotonPdeA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/business90.png"))); // NOI18N
         BotonPdeA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -230,7 +249,7 @@ public class FormPrincipal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnInterpolacion);
-        btnInterpolacion.setBounds(130, 280, 70, 50);
+        btnInterpolacion.setBounds(130, 280, 60, 50);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Principal.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -311,6 +330,10 @@ public class FormPrincipal extends javax.swing.JFrame {
         formgrad.setVisible(true);
     }//GEN-LAST:event_btnGradActionPerformed
 
+    private void btnTasasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTasasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnTasasActionPerformed
+
     public static void main(String args[]) {
   
         try {
@@ -350,9 +373,11 @@ public class FormPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton btnInterpolacion;
     private javax.swing.JButton btnRegla;
     private javax.swing.JButton btnSalir;
+    private javax.swing.JButton btnTasas;
     private javax.swing.JButton btnValorDinero;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
