@@ -8,8 +8,20 @@ public class Amortizacion extends javax.swing.JFrame {
 
     public Amortizacion() {
         initComponents();
+        btnReg.setOpaque(false);
+        btnReg.setContentAreaFilled(false);
+        btnReg.setBorderPainted(false);
     }
 
+void borrarCasillas()
+{
+    TxtA.setText(null); 
+    TxtA2.setText(null); 
+    TxtPorcentaje.setText(null); 
+    TxtPorcentaje2.setText(null);
+    lblResultado.setText("Resultado");
+    lblResultado2.setText("Resultado");
+}
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -27,13 +39,14 @@ public class Amortizacion extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        lblResultado2 = new javax.swing.JLabel();
+        lblResultado = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         BotonF = new javax.swing.JButton();
+        bntBorrar = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
-        TxtResultado = new javax.swing.JTextField();
         TxtA2 = new javax.swing.JTextField();
-        TxtResultado2 = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         BotonA = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
@@ -49,19 +62,19 @@ public class Amortizacion extends javax.swing.JFrame {
 
         ComboAnio2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" }));
         getContentPane().add(ComboAnio2);
-        ComboAnio2.setBounds(395, 126, 77, 20);
+        ComboAnio2.setBounds(390, 140, 80, 30);
         getContentPane().add(TxtA);
-        TxtA.setBounds(155, 75, 77, 20);
+        TxtA.setBounds(155, 75, 77, 30);
 
-        jLabel9.setText("Pago Inicial F");
+        jLabel9.setText("Pago Inicial F:");
         getContentPane().add(jLabel9);
-        jLabel9.setBounds(294, 78, 77, 14);
+        jLabel9.setBounds(300, 80, 100, 20);
         getContentPane().add(TxtPorcentaje);
-        TxtPorcentaje.setBounds(155, 95, 77, 20);
+        TxtPorcentaje.setBounds(155, 105, 77, 30);
 
         jLabel8.setText("F/A");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(134, 53, 30, 14);
+        jLabel8.setBounds(134, 53, 20, 20);
 
         ComboAnio1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" }));
         ComboAnio1.addActionListener(new java.awt.event.ActionListener() {
@@ -70,37 +83,41 @@ public class Amortizacion extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ComboAnio1);
-        ComboAnio1.setBounds(155, 126, 77, 20);
+        ComboAnio1.setBounds(150, 140, 80, 30);
         getContentPane().add(TxtPorcentaje2);
-        TxtPorcentaje2.setBounds(395, 95, 77, 20);
+        TxtPorcentaje2.setBounds(395, 105, 77, 30);
 
-        jLabel2.setText("Serie Uniforme A");
+        jLabel2.setText("Serie Uniforme A:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(43, 78, 94, 14);
+        jLabel2.setBounds(43, 78, 100, 20);
 
         jLabel12.setText("Resultado (A)=");
         getContentPane().add(jLabel12);
-        jLabel12.setBounds(301, 239, 74, 14);
+        jLabel12.setBounds(300, 220, 90, 30);
 
-        jLabel3.setText("Porcentaje");
+        jLabel3.setText("Porcentaje:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(68, 98, 52, 14);
+        jLabel3.setBounds(70, 110, 70, 20);
 
         jLabel4.setText("%");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(236, 98, 11, 14);
+        jLabel4.setBounds(236, 108, 20, 20);
 
-        jLabel10.setText("Porcentaje");
+        jLabel10.setText("Porcentaje:");
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(308, 98, 52, 14);
+        jLabel10.setBounds(310, 110, 80, 20);
 
-        jLabel5.setText("Resultado (F) =");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(10, 239, 76, 14);
+        lblResultado2.setText("Resultado aqui");
+        getContentPane().add(lblResultado2);
+        lblResultado2.setBounds(390, 220, 90, 30);
+
+        lblResultado.setText("Resultado aqui");
+        getContentPane().add(lblResultado);
+        lblResultado.setBounds(150, 220, 90, 30);
 
         jLabel11.setText("%");
         getContentPane().add(jLabel11);
-        jLabel11.setBounds(482, 98, 11, 14);
+        jLabel11.setBounds(473, 108, 20, 20);
 
         BotonF.setText("Calcular Valor  Futuro (F)");
         BotonF.addActionListener(new java.awt.event.ActionListener() {
@@ -109,21 +126,30 @@ public class Amortizacion extends javax.swing.JFrame {
             }
         });
         getContentPane().add(BotonF);
-        BotonF.setBounds(53, 152, 173, 73);
+        BotonF.setBounds(50, 170, 180, 50);
 
-        jLabel13.setText("Años");
+        bntBorrar.setText("Borrar");
+        bntBorrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntBorrarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bntBorrar);
+        bntBorrar.setBounds(480, 190, 70, 40);
+
+        jLabel13.setText("Años:");
         getContentPane().add(jLabel13);
-        jLabel13.setBounds(336, 129, 41, 14);
-        getContentPane().add(TxtResultado);
-        TxtResultado.setBounds(96, 236, 136, 20);
+        jLabel13.setBounds(330, 140, 41, 20);
         getContentPane().add(TxtA2);
-        TxtA2.setBounds(395, 75, 77, 20);
-        getContentPane().add(TxtResultado2);
-        TxtResultado2.setBounds(393, 236, 79, 20);
+        TxtA2.setBounds(395, 75, 77, 30);
+
+        jLabel15.setText("Resultado (F) =");
+        getContentPane().add(jLabel15);
+        jLabel15.setBounds(60, 220, 90, 30);
 
         jLabel7.setText("A/F");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(401, 53, 30, 14);
+        jLabel7.setBounds(390, 50, 40, 30);
 
         BotonA.setText("Calcular Valor  Presente (A)");
         BotonA.addActionListener(new java.awt.event.ActionListener() {
@@ -132,11 +158,11 @@ public class Amortizacion extends javax.swing.JFrame {
             }
         });
         getContentPane().add(BotonA);
-        BotonA.setBounds(299, 152, 173, 73);
+        BotonA.setBounds(290, 170, 180, 50);
 
-        jLabel6.setText("Años");
+        jLabel6.setText("Años:");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(96, 129, 41, 14);
+        jLabel6.setBounds(90, 140, 41, 30);
 
         btnReg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icon1.png"))); // NOI18N
         btnReg.addActionListener(new java.awt.event.ActionListener() {
@@ -145,7 +171,7 @@ public class Amortizacion extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnReg);
-        btnReg.setBounds(510, 240, 50, 40);
+        btnReg.setBounds(500, 240, 50, 40);
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo4.jpg"))); // NOI18N
         getContentPane().add(jLabel14);
@@ -170,7 +196,7 @@ public class Amortizacion extends javax.swing.JFrame {
                      p = Math.round(p*Math.pow(10,4))/Math.pow(10,4);
                     
                    
-                    TxtResultado.setText(Double.toString(p)); // mostramos el resultado en txtbox
+                    lblResultado.setText(Double.toString(p)); // mostramos el resultado en txtbox
                     // ahora preparamos las variables para mandar a graficar
                     int anioinicio=0, aniofinal=anio, TotalAnios=anio+1;
                     String[] Tipo = new String[25];
@@ -186,6 +212,12 @@ public class Amortizacion extends javax.swing.JFrame {
                         Anio[j]=j;
                         Cantidad[j]=A;
                         Tipo[j]="Salida";
+                        /*
+                         /*Anio[j]=j;
+                        Cantidad[j]=base+(g*j);
+                       
+                        Tipo[j]="Salida"; 
+                         */
                     }
                     PanelGrafico  Panel = new PanelGrafico(anioinicio,aniofinal, Cantidad,Anio,Tipo,TotalAnios);
                     JFrame Formulario = new JFrame();
@@ -222,7 +254,7 @@ public class Amortizacion extends javax.swing.JFrame {
                 {
                     A=P*((i)/(Math.pow((1+i),anio)-1));
                     float A2=(float)A;
-                    TxtResultado2.setText(Float.toString(A2)); // mostramos el resultado en txtbox
+                    lblResultado2.setText(Float.toString(A2)); // mostramos el resultado en txtbox
                     // ahora preparamos las variables para mandar a graficar
                     int anioinicio=0, aniofinal=anio, TotalAnios=anio+1;
                     String[] Tipo = new String[25];
@@ -266,6 +298,10 @@ public class Amortizacion extends javax.swing.JFrame {
     private void btnRegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegActionPerformed
         this.dispose();
     }//GEN-LAST:event_btnRegActionPerformed
+
+    private void bntBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntBorrarActionPerformed
+        borrarCasillas();
+    }//GEN-LAST:event_bntBorrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -311,21 +347,22 @@ public class Amortizacion extends javax.swing.JFrame {
     private javax.swing.JTextField TxtA2;
     private javax.swing.JTextField TxtPorcentaje;
     private javax.swing.JTextField TxtPorcentaje2;
-    private javax.swing.JTextField TxtResultado;
-    private javax.swing.JTextField TxtResultado2;
+    private javax.swing.JButton bntBorrar;
     private javax.swing.JButton btnReg;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel lblResultado;
+    private javax.swing.JLabel lblResultado2;
     // End of variables declaration//GEN-END:variables
 }

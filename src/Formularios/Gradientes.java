@@ -5,7 +5,9 @@ public class Gradientes extends javax.swing.JFrame {
 
     public Gradientes() {
         initComponents();
-        
+        btnReg.setOpaque(false);
+        btnReg.setContentAreaFilled(false);
+        btnReg.setBorderPainted(false);
     }
 
     @SuppressWarnings("unchecked")
@@ -37,11 +39,12 @@ public class Gradientes extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(570, 300));
-        setMinimumSize(new java.awt.Dimension(570, 300));
-        setPreferredSize(new java.awt.Dimension(570, 300));
+        setMaximumSize(new java.awt.Dimension(580, 350));
+        setMinimumSize(new java.awt.Dimension(580, 350));
+        setPreferredSize(new java.awt.Dimension(580, 350));
         setResizable(false);
         getContentPane().setLayout(null);
 
@@ -139,7 +142,7 @@ public class Gradientes extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnReg);
-        btnReg.setBounds(520, 250, 50, 40);
+        btnReg.setBounds(500, 260, 50, 40);
 
         jLabel7.setText("Gradiente:");
         getContentPane().add(jLabel7);
@@ -152,6 +155,10 @@ public class Gradientes extends javax.swing.JFrame {
         jLabel9.setText("A/G");
         getContentPane().add(jLabel9);
         jLabel9.setBounds(290, 60, 30, 14);
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo9.jpg"))); // NOI18N
+        getContentPane().add(jLabel10);
+        jLabel10.setBounds(0, 0, 600, 350);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -247,6 +254,7 @@ public class Gradientes extends javax.swing.JFrame {
     private javax.swing.JComboBox cmbA2;
     private javax.swing.JComboBox cmbA3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

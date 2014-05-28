@@ -7,6 +7,9 @@ public class ValorDinero extends javax.swing.JFrame {
 
     public ValorDinero() {
         initComponents();
+        btnReg.setOpaque(false);
+        btnReg.setContentAreaFilled(false);
+        btnReg.setBorderPainted(false);
     }
 
 void borrarCasillas()
@@ -127,7 +130,7 @@ void borrarCasillas()
             }
         });
         getContentPane().add(BotonCalcular);
-        BotonCalcular.setBounds(240, 80, 90, 30);
+        BotonCalcular.setBounds(250, 90, 90, 30);
 
         bntBorrar.setText("Borrar");
         bntBorrar.addActionListener(new java.awt.event.ActionListener() {
@@ -136,7 +139,7 @@ void borrarCasillas()
             }
         });
         getContentPane().add(bntBorrar);
-        bntBorrar.setBounds(240, 110, 90, 30);
+        bntBorrar.setBounds(250, 120, 90, 30);
 
         jLabel3.setText("%");
         getContentPane().add(jLabel3);
@@ -169,12 +172,8 @@ void borrarCasillas()
         });
         getContentPane().add(RadioFuturo);
         RadioFuturo.setBounds(30, 130, 90, 23);
-
-        TxtInteres.setText("6");
         getContentPane().add(TxtInteres);
         TxtInteres.setBounds(120, 90, 70, 30);
-
-        TxtCantidadInicial.setText("0");
         getContentPane().add(TxtCantidadInicial);
         TxtCantidadInicial.setBounds(30, 90, 90, 30);
 

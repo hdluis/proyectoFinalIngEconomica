@@ -35,9 +35,9 @@ public class FlujoEfectivo extends javax.swing.JFrame {
         jLabel2.setText("Año Final");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(300, 170));
-        setMinimumSize(new java.awt.Dimension(300, 170));
-        setPreferredSize(new java.awt.Dimension(300, 170));
+        setMaximumSize(new java.awt.Dimension(360, 270));
+        setMinimumSize(new java.awt.Dimension(360, 270));
+        setPreferredSize(new java.awt.Dimension(360, 270));
         setResizable(false);
         getContentPane().setLayout(null);
 
@@ -48,7 +48,7 @@ public class FlujoEfectivo extends javax.swing.JFrame {
             }
         });
         getContentPane().add(BotonGraficar);
-        BotonGraficar.setBounds(162, 58, 123, 23);
+        BotonGraficar.setBounds(193, 80, 140, 50);
 
         ComboAnio1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-10", "-9", "-8", "-7", "-6", "-5", "-5", "-4", "-3", "-2", "-1", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }));
         ComboAnio1.setSelectedIndex(11);
@@ -58,24 +58,24 @@ public class FlujoEfectivo extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ComboAnio1);
-        ComboAnio1.setBounds(10, 58, 62, 20);
+        ComboAnio1.setBounds(20, 90, 70, 30);
 
         ComboAnio2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-10", "-9", "-8", "-7", "-6", "-5", "-5", "-4", "-3", "-2", "-1", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }));
         ComboAnio2.setSelectedIndex(16);
         getContentPane().add(ComboAnio2);
-        ComboAnio2.setBounds(78, 58, 50, 20);
+        ComboAnio2.setBounds(90, 90, 60, 30);
 
         jLabel1.setText("Año de Inicio");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(10, 38, 62, 14);
+        jLabel1.setBounds(20, 70, 70, 20);
 
         jLabel3.setText("Numero de Eventos");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(10, 85, 94, 14);
+        jLabel3.setBounds(20, 120, 100, 20);
 
         ComboEventos.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20" }));
         getContentPane().add(ComboEventos);
-        ComboEventos.setBounds(10, 105, 46, 20);
+        ComboEventos.setBounds(20, 140, 50, 30);
 
         btnReg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icon1.png"))); // NOI18N
         btnReg.addActionListener(new java.awt.event.ActionListener() {
@@ -84,9 +84,11 @@ public class FlujoEfectivo extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnReg);
-        btnReg.setBounds(230, 90, 50, 40);
+        btnReg.setBounds(280, 180, 50, 40);
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo7.jpg"))); // NOI18N
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(0, 0, 330, 150);
+        jLabel4.setBounds(0, 0, 360, 250);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

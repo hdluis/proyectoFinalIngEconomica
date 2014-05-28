@@ -36,9 +36,17 @@ public class FormPrincipal extends javax.swing.JFrame {
         btnInterpolacion.setContentAreaFilled(false);
         btnInterpolacion.setBorderPainted(false);
         
+        btnGrad.setOpaque(false);
+        btnGrad.setContentAreaFilled(false);
+        btnGrad.setBorderPainted(false);
+        
         BotonFdeA.setOpaque(false);
         BotonFdeA.setContentAreaFilled(false);
         BotonFdeA.setBorderPainted(false);
+        
+        BotonPdeA.setOpaque(false);
+        BotonPdeA.setContentAreaFilled(false);
+        BotonPdeA.setBorderPainted(false);
     }
 
     @SuppressWarnings("unchecked")
@@ -51,12 +59,14 @@ public class FormPrincipal extends javax.swing.JFrame {
         btnSalir = new javax.swing.JButton();
         btnInteres = new javax.swing.JButton();
         btnRegla = new javax.swing.JButton();
+        btnGrad = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         BotonPdeA = new javax.swing.JButton();
         BotonFdeA = new javax.swing.JButton();
         btnInterpolacion = new javax.swing.JButton();
@@ -101,7 +111,7 @@ public class FormPrincipal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnValorDinero);
-        btnValorDinero.setBounds(250, 120, 50, 50);
+        btnValorDinero.setBounds(250, 120, 60, 50);
 
         btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/power70.png"))); // NOI18N
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
@@ -130,13 +140,22 @@ public class FormPrincipal extends javax.swing.JFrame {
         getContentPane().add(btnRegla);
         btnRegla.setBounds(250, 200, 50, 50);
 
+        btnGrad.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/email10.png"))); // NOI18N
+        btnGrad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGradActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnGrad);
+        btnGrad.setBounds(380, 200, 60, 50);
+
         jLabel3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(239, 241, 194));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Amortizaciones"); // NOI18N
+        jLabel3.setText("Gradientes"); // NOI18N
         jLabel3.setToolTipText("");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(450, 250, 90, 30);
+        jLabel3.setBounds(380, 250, 70, 30);
         jLabel3.getAccessibleContext().setAccessibleName("Valor del Dinero \nen el Tiempo");
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -149,10 +168,10 @@ public class FormPrincipal extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(239, 241, 194));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Valor del Dinero en el Tiempo"); // NOI18N
+        jLabel5.setText("Valor del Dinero"); // NOI18N
         jLabel5.setToolTipText("");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(250, 170, 170, 30);
+        jLabel5.setBounds(250, 170, 90, 30);
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(239, 241, 194));
@@ -160,7 +179,7 @@ public class FormPrincipal extends javax.swing.JFrame {
         jLabel6.setText("Interpolacion"); // NOI18N
         jLabel6.setToolTipText("");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(130, 350, 80, 30);
+        jLabel6.setBounds(130, 330, 80, 30);
 
         jLabel7.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(239, 241, 194));
@@ -178,14 +197,22 @@ public class FormPrincipal extends javax.swing.JFrame {
         getContentPane().add(jLabel8);
         jLabel8.setBounds(250, 250, 70, 30);
 
-        BotonPdeA.setText("P/A  &  A/P");
+        jLabel9.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(239, 241, 194));
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setText("Amortizaciones"); // NOI18N
+        jLabel9.setToolTipText("");
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(380, 170, 90, 30);
+
+        BotonPdeA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/business90.png"))); // NOI18N
         BotonPdeA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotonPdeAActionPerformed(evt);
             }
         });
         getContentPane().add(BotonPdeA);
-        BotonPdeA.setBounds(440, 120, 90, 50);
+        BotonPdeA.setBounds(380, 120, 60, 50);
 
         BotonFdeA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/campaign2.png"))); // NOI18N
         BotonFdeA.addActionListener(new java.awt.event.ActionListener() {
@@ -194,7 +221,7 @@ public class FormPrincipal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(BotonFdeA);
-        BotonFdeA.setBounds(450, 200, 60, 50);
+        BotonFdeA.setBounds(470, 120, 60, 50);
 
         btnInterpolacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/businessman134.png"))); // NOI18N
         btnInterpolacion.addActionListener(new java.awt.event.ActionListener() {
@@ -203,7 +230,7 @@ public class FormPrincipal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnInterpolacion);
-        btnInterpolacion.setBounds(130, 290, 70, 60);
+        btnInterpolacion.setBounds(130, 280, 70, 50);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Principal.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -279,6 +306,11 @@ public class FormPrincipal extends javax.swing.JFrame {
         interpolarizacion.setVisible(true);
     }//GEN-LAST:event_btnInterpolacionActionPerformed
 
+    private void btnGradActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGradActionPerformed
+        Gradientes formgrad = new Gradientes();
+        formgrad.setVisible(true);
+    }//GEN-LAST:event_btnGradActionPerformed
+
     public static void main(String args[]) {
   
         try {
@@ -313,6 +345,7 @@ public class FormPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton BotonFdeA;
     private javax.swing.JButton BotonPdeA;
     private javax.swing.JButton btnFlujoEfectivo;
+    private javax.swing.JButton btnGrad;
     private javax.swing.JButton btnInteres;
     private javax.swing.JButton btnInterpolacion;
     private javax.swing.JButton btnRegla;
@@ -326,6 +359,7 @@ public class FormPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;

@@ -7,19 +7,27 @@ import javax.swing.JOptionPane;
 
 public class FSU extends javax.swing.JFrame {
 
-    /**
-     * Creates new form FSeriesUniformes
-     */
     public FSU() {
         initComponents();
+        btnReg.setOpaque(false);
+        btnReg.setContentAreaFilled(false);
+        btnReg.setBorderPainted(false);
     }
 
-   
+ void borrarCasillas()
+{
+    TxtA.setText(null); 
+    TxtA2.setText(null); 
+    TxtPorcentaje.setText(null); 
+    TxtPorcentaje2.setText(null);
+    lblResultado.setText("Resultado");
+    lblResultado2.setText("Resultado");
+}
+  
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         TxtA = new javax.swing.JTextField();
         TxtPorcentaje = new javax.swing.JTextField();
         ComboAnio1 = new javax.swing.JComboBox();
@@ -28,7 +36,6 @@ public class FSU extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         BotonP = new javax.swing.JButton();
-        TxtResultado = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -37,47 +44,46 @@ public class FSU extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
+        lblResultado2 = new javax.swing.JLabel();
+        lblResultado = new javax.swing.JLabel();
         BotonA = new javax.swing.JButton();
-        TxtResultado2 = new javax.swing.JTextField();
         TxtA2 = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
         btnReg = new javax.swing.JButton();
+        bntBorrar = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(580, 350));
+        setMinimumSize(new java.awt.Dimension(580, 350));
+        setPreferredSize(new java.awt.Dimension(580, 350));
+        setResizable(false);
         getContentPane().setLayout(null);
-
-        jLabel1.setText("Factores de Valor Presente  y recuperacion de capital en series uniformes");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(103, 11, 364, 24);
-
-        TxtA.setText("0.00");
         getContentPane().add(TxtA);
-        TxtA.setBounds(199, 108, 77, 20);
-
-        TxtPorcentaje.setText("6");
+        TxtA.setBounds(140, 100, 77, 30);
         getContentPane().add(TxtPorcentaje);
-        TxtPorcentaje.setBounds(199, 128, 77, 20);
+        TxtPorcentaje.setBounds(140, 130, 77, 30);
 
         ComboAnio1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" }));
         getContentPane().add(ComboAnio1);
-        ComboAnio1.setBounds(199, 159, 77, 20);
+        ComboAnio1.setBounds(140, 160, 77, 30);
 
-        jLabel2.setText("Serie Uniforme A");
+        jLabel2.setText("Serie Uniforme A:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(87, 111, 94, 14);
+        jLabel2.setBounds(30, 104, 110, 20);
 
-        jLabel3.setText("Porcentaje");
+        jLabel3.setText("Porcentaje:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(112, 131, 52, 14);
+        jLabel3.setBounds(60, 130, 70, 30);
 
         jLabel4.setText("%");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(286, 131, 11, 14);
+        jLabel4.setBounds(221, 130, 20, 20);
 
         jLabel5.setText("Resultado (P) =");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(85, 272, 76, 14);
+        jLabel5.setBounds(46, 270, 90, 20);
 
         BotonP.setText("Calcular Valor  Presente (P)");
         BotonP.addActionListener(new java.awt.event.ActionListener() {
@@ -86,47 +92,45 @@ public class FSU extends javax.swing.JFrame {
             }
         });
         getContentPane().add(BotonP);
-        BotonP.setBounds(87, 185, 173, 73);
+        BotonP.setBounds(33, 190, 190, 60);
 
-        TxtResultado.setText("0");
-        getContentPane().add(TxtResultado);
-        TxtResultado.setBounds(171, 269, 105, 20);
-
-        jLabel6.setText("Años");
+        jLabel6.setText("Años:");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(140, 162, 41, 14);
+        jLabel6.setBounds(90, 160, 40, 20);
 
         jLabel7.setText("P/A");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(151, 76, 30, 14);
+        jLabel7.setBounds(120, 70, 30, 14);
 
         jLabel8.setText("A/P");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(396, 76, 30, 14);
-
-        TxtPorcentaje2.setText("6");
+        jLabel8.setBounds(370, 70, 30, 14);
         getContentPane().add(TxtPorcentaje2);
-        TxtPorcentaje2.setBounds(449, 128, 77, 20);
+        TxtPorcentaje2.setBounds(390, 130, 77, 30);
 
         ComboAnio2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" }));
         getContentPane().add(ComboAnio2);
-        ComboAnio2.setBounds(449, 159, 77, 20);
+        ComboAnio2.setBounds(390, 160, 77, 30);
 
-        jLabel9.setText("Pago Inicial P");
+        jLabel9.setText("Pago Inicial P:");
         getContentPane().add(jLabel9);
-        jLabel9.setBounds(337, 111, 94, 14);
+        jLabel9.setBounds(294, 100, 80, 30);
 
-        jLabel10.setText("Porcentaje");
+        jLabel10.setText("Porcentaje:");
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(362, 131, 52, 14);
+        jLabel10.setBounds(300, 130, 80, 30);
 
         jLabel11.setText("%");
         getContentPane().add(jLabel11);
-        jLabel11.setBounds(536, 131, 11, 14);
+        jLabel11.setBounds(471, 134, 20, 20);
 
-        jLabel12.setText("Resultado (A)=");
-        getContentPane().add(jLabel12);
-        jLabel12.setBounds(355, 272, 74, 14);
+        lblResultado2.setText("Resultado");
+        getContentPane().add(lblResultado2);
+        lblResultado2.setBounds(380, 270, 90, 20);
+
+        lblResultado.setText("Resultado");
+        getContentPane().add(lblResultado);
+        lblResultado.setBounds(130, 270, 90, 20);
 
         BotonA.setText("Calcular Valor  Presente (A)");
         BotonA.addActionListener(new java.awt.event.ActionListener() {
@@ -135,19 +139,17 @@ public class FSU extends javax.swing.JFrame {
             }
         });
         getContentPane().add(BotonA);
-        BotonA.setBounds(353, 185, 173, 73);
-
-        TxtResultado2.setText("0");
-        getContentPane().add(TxtResultado2);
-        TxtResultado2.setBounds(447, 269, 79, 20);
-
-        TxtA2.setText("0.00");
+        BotonA.setBounds(283, 190, 190, 60);
         getContentPane().add(TxtA2);
-        TxtA2.setBounds(449, 108, 77, 20);
+        TxtA2.setBounds(390, 100, 77, 30);
 
-        jLabel13.setText("Años");
+        jLabel13.setText("Años:");
         getContentPane().add(jLabel13);
-        jLabel13.setBounds(390, 162, 41, 14);
+        jLabel13.setBounds(330, 160, 41, 20);
+
+        jLabel15.setText("Resultado (A)=");
+        getContentPane().add(jLabel15);
+        jLabel15.setBounds(284, 270, 90, 20);
 
         btnReg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icon1.png"))); // NOI18N
         btnReg.addActionListener(new java.awt.event.ActionListener() {
@@ -156,7 +158,20 @@ public class FSU extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnReg);
-        btnReg.setBounds(550, 300, 50, 40);
+        btnReg.setBounds(510, 260, 50, 40);
+
+        bntBorrar.setText("Borrar");
+        bntBorrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntBorrarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bntBorrar);
+        bntBorrar.setBounds(490, 220, 70, 30);
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo8.jpg"))); // NOI18N
+        getContentPane().add(jLabel14);
+        jLabel14.setBounds(0, 0, 580, 350);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -175,7 +190,7 @@ public class FSU extends javax.swing.JFrame {
                 {
                     p=A*((Math.pow((1+i),anio)-1)/(i*(Math.pow((1+i), anio))));
                     float p2=(float)p;
-                    TxtResultado.setText(Float.toString(p2)); // mostramos el resultado en txtbox
+                    lblResultado.setText(Float.toString(p2)); // mostramos el resultado en txtbox
                     // ahora preparamos las variables para mandar a graficar
                     int anioinicio=0, aniofinal=anio, TotalAnios=anio+1;
                     String[] Tipo = new String[25];
@@ -227,7 +242,7 @@ public class FSU extends javax.swing.JFrame {
                 {
                     A=P*((i*(Math.pow((1+i), anio)))/(Math.pow((1+i),anio)-1));
                     float A2=(float)A;
-                    TxtResultado2.setText(Float.toString(A2)); // mostramos el resultado en txtbox
+                    lblResultado2.setText(Float.toString(A2)); // mostramos el resultado en txtbox
                     // ahora preparamos las variables para mandar a graficar
                     int anioinicio=0, aniofinal=anio, TotalAnios=anio+1;
                     String[] Tipo = new String[25];
@@ -267,6 +282,10 @@ public class FSU extends javax.swing.JFrame {
     private void btnRegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegActionPerformed
         this.dispose();
     }//GEN-LAST:event_btnRegActionPerformed
+
+    private void bntBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntBorrarActionPerformed
+        borrarCasillas();
+    }//GEN-LAST:event_bntBorrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -312,14 +331,13 @@ public class FSU extends javax.swing.JFrame {
     private javax.swing.JTextField TxtA2;
     private javax.swing.JTextField TxtPorcentaje;
     private javax.swing.JTextField TxtPorcentaje2;
-    private javax.swing.JTextField TxtResultado;
-    private javax.swing.JTextField TxtResultado2;
+    private javax.swing.JButton bntBorrar;
     private javax.swing.JButton btnReg;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -328,5 +346,7 @@ public class FSU extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel lblResultado;
+    private javax.swing.JLabel lblResultado2;
     // End of variables declaration//GEN-END:variables
 }
