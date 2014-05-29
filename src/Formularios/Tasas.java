@@ -138,7 +138,7 @@ void borrarCasillas()
             }
         });
         getContentPane().add(btnReg);
-        btnReg.setBounds(290, 190, 50, 40);
+        btnReg.setBounds(290, 180, 50, 40);
 
         bntBorrar.setText("Borrar");
         bntBorrar.addActionListener(new java.awt.event.ActionListener() {

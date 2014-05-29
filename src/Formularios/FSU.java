@@ -98,10 +98,12 @@ public class FSU extends javax.swing.JFrame {
         getContentPane().add(jLabel6);
         jLabel6.setBounds(90, 160, 40, 20);
 
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel7.setText("P/A");
         getContentPane().add(jLabel7);
         jLabel7.setBounds(120, 70, 30, 14);
 
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel8.setText("A/P");
         getContentPane().add(jLabel8);
         jLabel8.setBounds(370, 70, 30, 14);
@@ -124,10 +126,12 @@ public class FSU extends javax.swing.JFrame {
         getContentPane().add(jLabel11);
         jLabel11.setBounds(471, 134, 20, 20);
 
+        lblResultado2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblResultado2.setText("Resultado");
         getContentPane().add(lblResultado2);
         lblResultado2.setBounds(380, 270, 90, 20);
 
+        lblResultado.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblResultado.setText("Resultado");
         getContentPane().add(lblResultado);
         lblResultado.setBounds(130, 270, 90, 20);

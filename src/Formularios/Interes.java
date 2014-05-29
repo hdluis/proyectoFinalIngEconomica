@@ -26,6 +26,7 @@ void borrarCasillas()
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel18 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -48,25 +49,29 @@ void borrarCasillas()
         setResizable(false);
         getContentPane().setLayout(null);
 
+        jLabel18.setText("%");
+        getContentPane().add(jLabel18);
+        jLabel18.setBounds(110, 130, 20, 30);
+
         jLabel1.setText("Tipo:");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(20, 80, 50, 30);
+        jLabel1.setBounds(20, 70, 50, 30);
 
         jLabel2.setText("Interes:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(20, 140, 60, 30);
+        jLabel2.setBounds(20, 130, 60, 30);
 
         jLabel3.setText("Periodos:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(20, 170, 60, 30);
+        jLabel3.setBounds(20, 160, 60, 30);
 
         jLabel4.setText("Principal:");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(20, 110, 60, 30);
+        jLabel4.setBounds(20, 100, 60, 30);
 
         lblResultado1.setText("Resultado:");
         getContentPane().add(lblResultado1);
-        lblResultado1.setBounds(20, 210, 60, 20);
+        lblResultado1.setBounds(20, 200, 60, 20);
 
         cmbInteres.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Seleccionar" }));
         cmbInteres.addActionListener(new java.awt.event.ActionListener() {
@@ -75,7 +80,7 @@ void borrarCasillas()
             }
         });
         getContentPane().add(cmbInteres);
-        cmbInteres.setBounds(70, 80, 110, 30);
+        cmbInteres.setBounds(70, 70, 110, 30);
 
         btnReg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icon1.png"))); // NOI18N
         btnReg.addActionListener(new java.awt.event.ActionListener() {
@@ -86,11 +91,11 @@ void borrarCasillas()
         getContentPane().add(btnReg);
         btnReg.setBounds(290, 190, 50, 40);
         getContentPane().add(txtInteres);
-        txtInteres.setBounds(70, 140, 40, 30);
+        txtInteres.setBounds(70, 130, 40, 30);
         getContentPane().add(txtPrincipal);
-        txtPrincipal.setBounds(70, 110, 90, 30);
+        txtPrincipal.setBounds(70, 100, 90, 30);
         getContentPane().add(txtPeriodos);
-        txtPeriodos.setBounds(70, 170, 40, 30);
+        txtPeriodos.setBounds(70, 160, 40, 30);
 
         btnCalcular.setText("Calcular");
         btnCalcular.addActionListener(new java.awt.event.ActionListener() {
@@ -99,11 +104,12 @@ void borrarCasillas()
             }
         });
         getContentPane().add(btnCalcular);
-        btnCalcular.setBounds(220, 80, 90, 30);
+        btnCalcular.setBounds(250, 70, 90, 30);
 
+        lblResultado.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblResultado.setText("Resultado.");
         getContentPane().add(lblResultado);
-        lblResultado.setBounds(90, 210, 160, 20);
+        lblResultado.setBounds(90, 200, 160, 20);
 
         bntBorrar.setText("Borrar");
         bntBorrar.addActionListener(new java.awt.event.ActionListener() {
@@ -112,7 +118,7 @@ void borrarCasillas()
             }
         });
         getContentPane().add(bntBorrar);
-        bntBorrar.setBounds(220, 110, 90, 30);
+        bntBorrar.setBounds(250, 100, 90, 30);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo3.jpg"))); // NOI18N
         getContentPane().add(jLabel5);
@@ -202,6 +208,7 @@ void borrarCasillas()
     private javax.swing.JButton btnReg;
     private javax.swing.JComboBox cmbInteres;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

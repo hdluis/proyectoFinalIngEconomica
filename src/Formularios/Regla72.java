@@ -72,7 +72,7 @@ void borrarCasillas()
             }
         });
         getContentPane().add(btnCalcular);
-        btnCalcular.setBounds(210, 70, 90, 30);
+        btnCalcular.setBounds(250, 70, 90, 30);
 
         btnReg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icon1.png"))); // NOI18N
         btnReg.addActionListener(new java.awt.event.ActionListener() {
@@ -126,7 +126,7 @@ void borrarCasillas()
             }
         });
         getContentPane().add(bntBorrar);
-        bntBorrar.setBounds(210, 100, 90, 30);
+        bntBorrar.setBounds(250, 100, 90, 30);
         getContentPane().add(txtInteres);
         txtInteres.setBounds(70, 100, 100, 30);
 

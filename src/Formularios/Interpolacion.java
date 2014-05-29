@@ -28,9 +28,12 @@ public class Interpolacion extends javax.swing.JFrame {
         txtvalor1 = new javax.swing.JTextField();
         txtvalor2 = new javax.swing.JTextField();
         txtporcentaje3 = new javax.swing.JTextField();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
         bntBorrar = new javax.swing.JButton();
         lblResultado = new javax.swing.JLabel();
         calcular = new javax.swing.JButton();
+        jLabel19 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -60,6 +63,14 @@ public class Interpolacion extends javax.swing.JFrame {
         getContentPane().add(txtporcentaje3);
         txtporcentaje3.setBounds(20, 190, 70, 30);
 
+        jLabel18.setText("%");
+        getContentPane().add(jLabel18);
+        jLabel18.setBounds(90, 190, 20, 30);
+
+        jLabel20.setText("%");
+        getContentPane().add(jLabel20);
+        jLabel20.setBounds(90, 140, 20, 30);
+
         bntBorrar.setText("Borrar");
         bntBorrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,6 +80,7 @@ public class Interpolacion extends javax.swing.JFrame {
         getContentPane().add(bntBorrar);
         bntBorrar.setBounds(240, 100, 90, 30);
 
+        lblResultado.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblResultado.setText("0");
         getContentPane().add(lblResultado);
         lblResultado.setBounds(130, 190, 80, 30);
@@ -81,6 +93,10 @@ public class Interpolacion extends javax.swing.JFrame {
         });
         getContentPane().add(calcular);
         calcular.setBounds(243, 70, 90, 30);
+
+        jLabel19.setText("%");
+        getContentPane().add(jLabel19);
+        jLabel19.setBounds(90, 80, 20, 30);
 
         jLabel1.setText("Porcentaje 1:");
         getContentPane().add(jLabel1);
@@ -192,7 +208,10 @@ public class Interpolacion extends javax.swing.JFrame {
     private javax.swing.JButton btnReg;
     private javax.swing.JButton calcular;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

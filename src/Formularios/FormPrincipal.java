@@ -163,7 +163,7 @@ public class FormPrincipal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnTasas);
-        btnTasas.setBounds(450, 200, 60, 50);
+        btnTasas.setBounds(240, 280, 60, 50);
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(239, 241, 194));
@@ -171,7 +171,7 @@ public class FormPrincipal extends javax.swing.JFrame {
         jLabel3.setText("Tasas"); // NOI18N
         jLabel3.setToolTipText("");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(440, 250, 60, 30);
+        jLabel3.setBounds(230, 330, 60, 30);
         jLabel3.getAccessibleContext().setAccessibleName("Valor del Dinero \nen el Tiempo");
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N

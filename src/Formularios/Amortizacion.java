@@ -72,6 +72,7 @@ void borrarCasillas()
         getContentPane().add(TxtPorcentaje);
         TxtPorcentaje.setBounds(155, 105, 77, 30);
 
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel8.setText("F/A");
         getContentPane().add(jLabel8);
         jLabel8.setBounds(134, 53, 20, 20);
@@ -107,10 +108,12 @@ void borrarCasillas()
         getContentPane().add(jLabel10);
         jLabel10.setBounds(310, 110, 80, 20);
 
+        lblResultado2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblResultado2.setText("Resultado aqui");
         getContentPane().add(lblResultado2);
         lblResultado2.setBounds(390, 220, 90, 30);
 
+        lblResultado.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblResultado.setText("Resultado aqui");
         getContentPane().add(lblResultado);
         lblResultado.setBounds(150, 220, 90, 30);
@@ -135,7 +138,7 @@ void borrarCasillas()
             }
         });
         getContentPane().add(bntBorrar);
-        bntBorrar.setBounds(480, 190, 70, 40);
+        bntBorrar.setBounds(490, 170, 70, 40);
 
         jLabel13.setText("Años:");
         getContentPane().add(jLabel13);
@@ -147,6 +150,7 @@ void borrarCasillas()
         getContentPane().add(jLabel15);
         jLabel15.setBounds(60, 220, 90, 30);
 
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel7.setText("A/F");
         getContentPane().add(jLabel7);
         jLabel7.setBounds(390, 50, 40, 30);
@@ -171,7 +175,7 @@ void borrarCasillas()
             }
         });
         getContentPane().add(btnReg);
-        btnReg.setBounds(500, 240, 50, 40);
+        btnReg.setBounds(510, 220, 50, 40);
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo4.jpg"))); // NOI18N
         getContentPane().add(jLabel14);

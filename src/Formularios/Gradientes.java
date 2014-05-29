@@ -36,9 +36,12 @@ void borrarCasillas()
     private void initComponents() {
 
         btnCalcular = new javax.swing.JButton();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
         txtGradiente = new javax.swing.JTextField();
         cmbA1 = new javax.swing.JComboBox();
         txtInteres = new javax.swing.JTextField();
+        jLabel17 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         lblRespuesta = new javax.swing.JLabel();
@@ -89,6 +92,14 @@ void borrarCasillas()
         });
         getContentPane().add(btnCalcular);
         btnCalcular.setBounds(70, 210, 90, 23);
+
+        jLabel19.setText("%");
+        getContentPane().add(jLabel19);
+        jLabel19.setBounds(480, 120, 20, 30);
+
+        jLabel18.setText("%");
+        getContentPane().add(jLabel18);
+        jLabel18.setBounds(310, 120, 20, 30);
         getContentPane().add(txtGradiente);
         txtGradiente.setBounds(90, 90, 64, 30);
 
@@ -98,13 +109,18 @@ void borrarCasillas()
         getContentPane().add(txtInteres);
         txtInteres.setBounds(90, 120, 64, 30);
 
+        jLabel17.setText("%");
+        getContentPane().add(jLabel17);
+        jLabel17.setBounds(160, 120, 20, 20);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel1.setText("F/G");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(430, 60, 30, 14);
 
         jLabel2.setText("Interes:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(30, 120, 66, 14);
+        jLabel2.setBounds(30, 120, 66, 30);
 
         lblRespuesta.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblRespuesta.setText("Respueta");
@@ -143,7 +159,7 @@ void borrarCasillas()
 
         jLabel11.setText("Interes:");
         getContentPane().add(jLabel11);
-        jLabel11.setBounds(181, 120, 60, 20);
+        jLabel11.setBounds(181, 120, 60, 30);
 
         jLabel12.setText("Resultado:");
         getContentPane().add(jLabel12);
@@ -187,7 +203,7 @@ void borrarCasillas()
 
         jLabel14.setText("Base:");
         getContentPane().add(jLabel14);
-        jLabel14.setBounds(40, 150, 50, 14);
+        jLabel14.setBounds(40, 150, 50, 30);
         getContentPane().add(txtBase);
         txtBase.setBounds(90, 150, 64, 30);
         getContentPane().add(txtBase3);
@@ -203,7 +219,7 @@ void borrarCasillas()
 
         jLabel6.setText("Interes:");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(346, 120, 60, 14);
+        jLabel6.setBounds(346, 120, 60, 30);
 
         lblRespuesta3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblRespuesta3.setText("Respueta");
@@ -241,10 +257,12 @@ void borrarCasillas()
         getContentPane().add(jLabel7);
         jLabel7.setBounds(20, 90, 66, 14);
 
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel8.setText("P/G");
         getContentPane().add(jLabel8);
         jLabel8.setBounds(110, 60, 30, 14);
 
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel9.setText("A/G");
         getContentPane().add(jLabel9);
         jLabel9.setBounds(260, 60, 30, 14);
@@ -536,6 +554,9 @@ void borrarCasillas()
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
