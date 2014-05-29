@@ -1,21 +1,51 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package Formularios;
 
-/**
- *
- * @author LuIs-HD
- */
-public class Tasas extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Tasas
-     */
+public class Tasas extends javax.swing.JFrame {
+String vInt;
+int vvInt;
+
     public Tasas() {
         initComponents();
+        btnReg.setOpaque(false);
+        btnReg.setContentAreaFilled(false);
+        btnReg.setBorderPainted(false);
+        
+        cmbTasa.addItem("Tasa Efectiva");
+        cmbTasa.addItem("Tasa Nominal");
+        cmbTasa.addItem("Tasa Efectiva Capitalizacion Continua");
+        cmbTasa.addItem("Tasa Efectiva Para Cualquier Periodo");
+        
+        txtPeriodoc.setVisible(false);
+        jLabel6.setVisible(false);
+        txtPrincipal.setVisible(false);
+        jLabel3.setVisible(false);
+        txtInteres.setVisible(false);
+        jLabel4.setVisible(false);
+        jLabel5.setVisible(false);
+        txtPeriodos.setVisible(false);
     }
+    
+void borrarCasillas()
+{
+    txtPrincipal.setText(null); 
+    txtInteres.setText(null); 
+    txtPeriodos.setText(null);
+    txtPeriodoc.setText(null);
+    lblResultado.setText("Resultado"); 
+    cmbTasa.setSelectedItem("Seleccionar");
+    
+    //Ocultar todo
+    txtPeriodoc.setVisible(false);
+    jLabel6.setVisible(false);
+    txtPrincipal.setVisible(false);
+    jLabel3.setVisible(false);
+    txtInteres.setVisible(false);
+    jLabel4.setVisible(false);
+    jLabel5.setVisible(false);
+    txtPeriodos.setVisible(false);
+    
+}
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -26,21 +56,202 @@ public class Tasas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        btnCalcular = new javax.swing.JButton();
+        lblResultado = new javax.swing.JLabel();
+        lblResultado1 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        txtPeriodoc = new javax.swing.JTextField();
+        txtPrincipal = new javax.swing.JTextField();
+        txtInteres = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        txtPeriodos = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        cmbTasa = new javax.swing.JComboBox();
+        btnReg = new javax.swing.JButton();
+        bntBorrar = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(360, 270));
+        setMinimumSize(new java.awt.Dimension(360, 270));
+        setPreferredSize(new java.awt.Dimension(360, 270));
+        setResizable(false);
+        getContentPane().setLayout(null);
+
+        btnCalcular.setText("Calcular");
+        btnCalcular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalcularActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCalcular);
+        btnCalcular.setBounds(250, 70, 90, 30);
+
+        lblResultado.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        lblResultado.setText("Resultado.");
+        getContentPane().add(lblResultado);
+        lblResultado.setBounds(90, 200, 160, 20);
+
+        lblResultado1.setText("Resultado:");
+        getContentPane().add(lblResultado1);
+        lblResultado1.setBounds(20, 200, 60, 20);
+
+        jLabel4.setText("Principal:");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(20, 100, 60, 30);
+
+        jLabel6.setText("Periodo Compuesto:");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(120, 160, 130, 30);
+        getContentPane().add(txtPeriodoc);
+        txtPeriodoc.setBounds(230, 160, 40, 30);
+        getContentPane().add(txtPrincipal);
+        txtPrincipal.setBounds(70, 100, 90, 30);
+        getContentPane().add(txtInteres);
+        txtInteres.setBounds(70, 130, 40, 30);
+
+        jLabel3.setText("Interes:");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(20, 130, 60, 30);
+        getContentPane().add(txtPeriodos);
+        txtPeriodos.setBounds(70, 160, 40, 30);
+
+        jLabel5.setText("Periodos:");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(20, 160, 60, 30);
+
+        cmbTasa.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Seleccionar" }));
+        cmbTasa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbTasaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(cmbTasa);
+        cmbTasa.setBounds(70, 70, 150, 30);
+
+        btnReg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icon1.png"))); // NOI18N
+        btnReg.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnReg);
+        btnReg.setBounds(290, 190, 50, 40);
+
+        bntBorrar.setText("Borrar");
+        bntBorrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntBorrarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bntBorrar);
+        bntBorrar.setBounds(250, 100, 90, 30);
+
+        jLabel2.setText("Tipo:");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(20, 70, 30, 30);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo10.jpg"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 360, 250);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnRegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_btnRegActionPerformed
+
+    private void cmbTasaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbTasaActionPerformed
+        vInt = cmbTasa.getSelectedItem().toString();
+        if (vInt == "Tasa Efectiva")
+        {
+            vvInt = 1;
+            txtPrincipal.setVisible(true);
+            jLabel3.setVisible(true);
+            txtInteres.setVisible(true);
+            jLabel4.setVisible(true);
+            txtPeriodoc.setVisible(false);
+            jLabel5.setVisible(true);
+            txtPeriodos.setVisible(true);
+            jLabel6.setVisible(false);
+        }
+        if (vInt == "Tasa Nominal")
+        {
+            vvInt = 2;
+            txtPrincipal.setVisible(true);
+            jLabel3.setVisible(true);
+            txtInteres.setVisible(true);
+            jLabel4.setVisible(true);
+            txtPeriodoc.setVisible(true);
+            jLabel5.setVisible(true);
+            txtPeriodos.setVisible(true);
+            jLabel6.setVisible(true);
+        }
+        if (vInt == "Tasa Efectiva Capitalizacion Continua")
+        {
+            vvInt = 3;
+            txtPeriodoc.setVisible(false);
+            jLabel6.setVisible(false);
+        }
+        if (vInt == "Tasa Efectiva Para Cualquier Periodo")
+        {
+            vvInt = 4;
+            txtPeriodoc.setVisible(true);
+            jLabel6.setVisible(true);
+            txtInteres.setVisible(true);
+            jLabel4.setVisible(true);
+            txtPrincipal.setVisible(false);
+            jLabel4.setVisible(false);
+            txtPeriodos.setVisible(false);
+            jLabel5.setVisible(false);
+        }
+    }//GEN-LAST:event_cmbTasaActionPerformed
+
+    private void bntBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntBorrarActionPerformed
+        borrarCasillas();
+    }//GEN-LAST:event_bntBorrarActionPerformed
+
+    private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
+        double inte = 0, presente = 0, perio = 0, comp = 0, resultado = 0, porcen = 0, res1;
+        porcen = inte/100;
+         
+        vInt = cmbTasa.getSelectedItem().toString();
+        
+        if (vInt == "Tasa Efectiva")
+        {
+            presente = Double.parseDouble(txtPrincipal.getText().toString());
+            inte = Double.parseDouble(txtInteres.getText().toString());
+            
+            resultado = presente * (Math.pow((1+porcen),Math.abs(perio)));
+            lblResultado.setText(Double.toString(resultado));
+        }
+        if (vInt == "Tasa Nominal")
+        {
+            presente = Double.parseDouble(txtPrincipal.getText().toString());
+            inte = Double.parseDouble(txtInteres.getText().toString());
+            
+            resultado = presente * (Math.pow((1+(porcen/comp)),Math.abs(perio)));
+            lblResultado.setText(Double.toString(resultado));
+        }
+        if (vInt == "Tasa Efectiva")
+        {
+           //resultado = presente * (Math.pow((1+porcen),Math.abs(perio)));
+            //lblResultado.setText(Double.toString(resultado));
+        }
+        if (vInt == "Tasa Efectiva Para Cualquier Periodo")
+        {
+            comp = Double.parseDouble(txtPeriodoc.getText().toString());
+            inte = Double.parseDouble(txtInteres.getText().toString());
+            
+            porcen = inte/100;
+            res1 = porcen/comp;
+            resultado = Math.pow((1+res1),Math.abs(comp))-1;
+            lblResultado.setText(Double.toString(resultado));
+        }
+    }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**
      * @param args the command line arguments
@@ -77,5 +288,21 @@ public class Tasas extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bntBorrar;
+    private javax.swing.JButton btnCalcular;
+    private javax.swing.JButton btnReg;
+    private javax.swing.JComboBox cmbTasa;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel lblResultado;
+    private javax.swing.JLabel lblResultado1;
+    private javax.swing.JTextField txtInteres;
+    private javax.swing.JTextField txtPeriodoc;
+    private javax.swing.JTextField txtPeriodos;
+    private javax.swing.JTextField txtPrincipal;
     // End of variables declaration//GEN-END:variables
 }

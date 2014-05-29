@@ -147,7 +147,7 @@ void borrarCasillas()
 
         jLabel12.setText("Resultado:");
         getContentPane().add(jLabel12);
-        jLabel12.setBounds(20, 240, 66, 20);
+        jLabel12.setBounds(26, 240, 60, 20);
 
         jLabel13.setText("Resultado:");
         getContentPane().add(jLabel13);
@@ -226,7 +226,7 @@ void borrarCasillas()
             }
         });
         getContentPane().add(btnGrad1);
-        btnGrad1.setBounds(40, 270, 130, 30);
+        btnGrad1.setBounds(40, 270, 140, 30);
 
         btnReg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icon1.png"))); // NOI18N
         btnReg.addActionListener(new java.awt.event.ActionListener() {
@@ -270,7 +270,7 @@ void borrarCasillas()
         
         if (txtBase.getText()!="")
             {
-                bas =Double.parseDouble(txtBase.getText().toString());
+                bas = Double.parseDouble(txtBase.getText().toString());
             }
         
         try
@@ -464,7 +464,23 @@ void borrarCasillas()
     }//GEN-LAST:event_btnGrad1ActionPerformed
 
     private void btnFlujoGradienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFlujoGradienteActionPerformed
-        // TODO add your handling code here:
+        JTextField  base = new JTextField(); // textbox para cantidad
+        JTextField  grad = new JTextField();
+        JTextField  tiempo = new JTextField();
+        int result = 0;
+        Object[] mensaje =  {    //objeto con los controles pa el inputdialog
+                "Base: ", base, "Gradiente: ", grad, "Periodos: ", tiempo
+            };
+        int Opcion = JOptionPane.showConfirmDialog(null, mensaje,"Encontrando el Valor del Flujo de Efectivo", JOptionPane.OK_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE);
+                if(Opcion==JOptionPane.OK_OPTION) // si el usiario presiona aceptar
+                {
+                    int DialogCantidad=Integer.parseInt(base.getText());
+                    int DialogCantidad2=Integer.parseInt(grad.getText());
+                    int DialogTiempo=Integer.parseInt(tiempo.getText());
+                    
+                    result = (DialogCantidad + (DialogTiempo-1) + DialogCantidad2);
+                    JOptionPane.showMessageDialog(null, "El Valor del Futuro de Efectivo es: "+ result);
+                }
     }//GEN-LAST:event_btnFlujoGradienteActionPerformed
 
     /**
@@ -502,10 +518,6 @@ void borrarCasillas()
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton bntBorrar;
-    private javax.swing.JButton bntBorrar1;
-    private javax.swing.JButton bntBorrar2;
-    private javax.swing.JButton bntBorrar3;
     private javax.swing.JButton bntBorrar4;
     private javax.swing.JButton btnCalcular;
     private javax.swing.JButton btnCalcular2;

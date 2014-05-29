@@ -40,6 +40,10 @@ public class FormPrincipal extends javax.swing.JFrame {
         btnGrad.setContentAreaFilled(false);
         btnGrad.setBorderPainted(false);
         
+        btnTasas.setOpaque(false);
+        btnTasas.setContentAreaFilled(false);
+        btnTasas.setBorderPainted(false);
+        
         BotonFdeA.setOpaque(false);
         BotonFdeA.setContentAreaFilled(false);
         BotonFdeA.setBorderPainted(false);
@@ -98,6 +102,7 @@ public class FormPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         btnFlujoEfectivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ascendant6.png"))); // NOI18N
+        btnFlujoEfectivo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnFlujoEfectivo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFlujoEfectivoActionPerformed(evt);
@@ -113,7 +118,7 @@ public class FormPrincipal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnValorDinero);
-        btnValorDinero.setBounds(250, 120, 60, 50);
+        btnValorDinero.setBounds(240, 120, 60, 50);
 
         btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/power70.png"))); // NOI18N
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
@@ -140,7 +145,7 @@ public class FormPrincipal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnRegla);
-        btnRegla.setBounds(250, 200, 50, 50);
+        btnRegla.setBounds(240, 200, 50, 50);
 
         btnGrad.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/email10.png"))); // NOI18N
         btnGrad.addActionListener(new java.awt.event.ActionListener() {
@@ -149,16 +154,16 @@ public class FormPrincipal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnGrad);
-        btnGrad.setBounds(380, 200, 60, 50);
+        btnGrad.setBounds(350, 200, 60, 50);
 
-        btnTasas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/email10.png"))); // NOI18N
+        btnTasas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/new3.png"))); // NOI18N
         btnTasas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnTasasActionPerformed(evt);
             }
         });
         getContentPane().add(btnTasas);
-        btnTasas.setBounds(470, 200, 60, 50);
+        btnTasas.setBounds(450, 200, 60, 50);
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(239, 241, 194));
@@ -166,7 +171,7 @@ public class FormPrincipal extends javax.swing.JFrame {
         jLabel3.setText("Tasas"); // NOI18N
         jLabel3.setToolTipText("");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(460, 250, 60, 30);
+        jLabel3.setBounds(440, 250, 60, 30);
         jLabel3.getAccessibleContext().setAccessibleName("Valor del Dinero \nen el Tiempo");
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -182,7 +187,7 @@ public class FormPrincipal extends javax.swing.JFrame {
         jLabel5.setText("Valor del Dinero"); // NOI18N
         jLabel5.setToolTipText("");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(250, 170, 90, 30);
+        jLabel5.setBounds(240, 170, 90, 30);
 
         jLabel6.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(239, 241, 194));
@@ -206,7 +211,7 @@ public class FormPrincipal extends javax.swing.JFrame {
         jLabel8.setText("Regla del 72"); // NOI18N
         jLabel8.setToolTipText("");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(250, 250, 70, 30);
+        jLabel8.setBounds(240, 250, 70, 30);
 
         jLabel9.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(239, 241, 194));
@@ -214,7 +219,7 @@ public class FormPrincipal extends javax.swing.JFrame {
         jLabel9.setText("Amortizaciones"); // NOI18N
         jLabel9.setToolTipText("");
         getContentPane().add(jLabel9);
-        jLabel9.setBounds(380, 170, 90, 30);
+        jLabel9.setBounds(350, 170, 90, 30);
 
         jLabel10.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(239, 241, 194));
@@ -222,7 +227,7 @@ public class FormPrincipal extends javax.swing.JFrame {
         jLabel10.setText("Gradientes"); // NOI18N
         jLabel10.setToolTipText("");
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(380, 250, 70, 30);
+        jLabel10.setBounds(350, 250, 70, 30);
 
         BotonPdeA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/business90.png"))); // NOI18N
         BotonPdeA.addActionListener(new java.awt.event.ActionListener() {
@@ -231,7 +236,7 @@ public class FormPrincipal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(BotonPdeA);
-        BotonPdeA.setBounds(380, 120, 60, 50);
+        BotonPdeA.setBounds(350, 120, 60, 50);
 
         BotonFdeA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/campaign2.png"))); // NOI18N
         BotonFdeA.addActionListener(new java.awt.event.ActionListener() {
@@ -240,7 +245,7 @@ public class FormPrincipal extends javax.swing.JFrame {
             }
         });
         getContentPane().add(BotonFdeA);
-        BotonFdeA.setBounds(470, 120, 60, 50);
+        BotonFdeA.setBounds(440, 120, 60, 50);
 
         btnInterpolacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/businessman134.png"))); // NOI18N
         btnInterpolacion.addActionListener(new java.awt.event.ActionListener() {
@@ -280,10 +285,6 @@ public class FormPrincipal extends javax.swing.JFrame {
         setBounds((screenSize.width-815)/2, (screenSize.height-585)/2, 815, 585);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-  
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
-
     private void btnFlujoEfectivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFlujoEfectivoActionPerformed
     FlujoEfectivo formflujo = new FlujoEfectivo();
     formflujo.setVisible(true);
@@ -321,7 +322,7 @@ public class FormPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_BotonFdeAActionPerformed
 
     private void btnInterpolacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInterpolacionActionPerformed
-        interpolarizacion  interpolarizacion = new interpolarizacion ();
+        Interpolacion  interpolarizacion = new Interpolacion ();
         interpolarizacion.setVisible(true);
     }//GEN-LAST:event_btnInterpolacionActionPerformed
 
@@ -331,8 +332,13 @@ public class FormPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnGradActionPerformed
 
     private void btnTasasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTasasActionPerformed
-        // TODO add your handling code here:
+        Tasas formtasas = new Tasas();
+        formtasas.setVisible(true);
     }//GEN-LAST:event_btnTasasActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     public static void main(String args[]) {
   

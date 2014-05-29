@@ -35,9 +35,7 @@ public class FlujoEfectivo extends javax.swing.JFrame {
         jLabel2.setText("Año Final");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(360, 270));
         setMinimumSize(new java.awt.Dimension(360, 270));
-        setPreferredSize(new java.awt.Dimension(360, 270));
         setResizable(false);
         getContentPane().setLayout(null);
 
@@ -50,8 +48,7 @@ public class FlujoEfectivo extends javax.swing.JFrame {
         getContentPane().add(BotonGraficar);
         BotonGraficar.setBounds(193, 80, 140, 50);
 
-        ComboAnio1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-10", "-9", "-8", "-7", "-6", "-5", "-5", "-4", "-3", "-2", "-1", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }));
-        ComboAnio1.setSelectedIndex(11);
+        ComboAnio1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-15", "-14", "-13", "-12", "-11", "-10", "-9", "-8", "-7", "-6", "-5", "-5", "-4", "-3", "-2", "-1", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" }));
         ComboAnio1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ComboAnio1ActionPerformed(evt);
@@ -60,10 +57,9 @@ public class FlujoEfectivo extends javax.swing.JFrame {
         getContentPane().add(ComboAnio1);
         ComboAnio1.setBounds(20, 90, 70, 30);
 
-        ComboAnio2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-10", "-9", "-8", "-7", "-6", "-5", "-5", "-4", "-3", "-2", "-1", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" }));
-        ComboAnio2.setSelectedIndex(16);
+        ComboAnio2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "-15", "-14", "-13", "-12", "-11", "-10", "-9", "-8", "-7", "-6", "-5", "-5", "-4", "-3", "-2", "-1", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" }));
         getContentPane().add(ComboAnio2);
-        ComboAnio2.setBounds(90, 90, 60, 30);
+        ComboAnio2.setBounds(100, 90, 60, 30);
 
         jLabel1.setText("Año de Inicio");
         getContentPane().add(jLabel1);
