@@ -18,27 +18,17 @@ String vTipo;
         btnReg.setBorderPainted(false);
     }
 
-void habilitarCasillas()
-    {
-      jLabel4.setVisible(true);   
-      txtPeriodo.setVisible(true);
-      jLabel2.setVisible(false);
-      txtInteres.setVisible(false);
-    }
-
-void inhabilitarCasillas()
-    {
-      jLabel4.setVisible(false);    
-      txtPeriodo.setVisible(false);
-      jLabel2.setVisible(true);
-      txtInteres.setVisible(true);
-    }
-
 void borrarCasillas()
 {
     txtPeriodo.setText(null); 
     txtInteres.setText(null); 
     lblResultado.setText("Resultado"); 
+    
+    jLabel4.setVisible(false);    
+    txtPeriodo.setVisible(false);
+    jLabel2.setVisible(false);
+    txtInteres.setVisible(false);
+    cmbTipo.setSelectedItem("Seleccionar");
 }
 
     @SuppressWarnings("unchecked")
@@ -164,10 +154,19 @@ void borrarCasillas()
         vTipo = cmbTipo.getSelectedItem().toString();
         if (vTipo == "Periodos")
         {
-            habilitarCasillas();
+            jLabel2.setVisible(false);
+            txtInteres.setVisible(false);
+            jLabel4.setVisible(true);    
+            txtPeriodo.setVisible(true);            
         }
-        else
-        inhabilitarCasillas();
+        if (vTipo == "Interes")
+        {
+            
+            jLabel2.setVisible(true);
+            txtInteres.setVisible(true);
+            jLabel4.setVisible(false);    
+            txtPeriodo.setVisible(false);   
+        }
     }//GEN-LAST:event_cmbTipoActionPerformed
 
     private void bntBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntBorrarActionPerformed

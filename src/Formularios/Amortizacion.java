@@ -21,6 +21,8 @@ void borrarCasillas()
     TxtPorcentaje2.setText(null);
     lblResultado.setText("Resultado");
     lblResultado2.setText("Resultado");
+    ComboAnio1.setSelectedItem("1");
+    ComboAnio2.setSelectedItem("1");
 }
 
     @SuppressWarnings("unchecked")
@@ -138,7 +140,7 @@ void borrarCasillas()
             }
         });
         getContentPane().add(bntBorrar);
-        bntBorrar.setBounds(490, 170, 70, 40);
+        bntBorrar.setBounds(490, 210, 70, 40);
 
         jLabel13.setText("Años:");
         getContentPane().add(jLabel13);
@@ -175,7 +177,7 @@ void borrarCasillas()
             }
         });
         getContentPane().add(btnReg);
-        btnReg.setBounds(510, 220, 50, 40);
+        btnReg.setBounds(510, 260, 50, 40);
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo4.jpg"))); // NOI18N
         getContentPane().add(jLabel14);

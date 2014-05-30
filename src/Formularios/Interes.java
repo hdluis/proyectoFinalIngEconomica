@@ -20,6 +20,7 @@ void borrarCasillas()
     txtInteres.setText(null); 
     txtPeriodos.setText(null);
     lblResultado.setText("Resultado"); 
+    cmbInteres.setSelectedItem("Seleccionar");
 }
  
     @SuppressWarnings("unchecked")

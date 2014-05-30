@@ -29,6 +29,9 @@ void borrarCasillas()
     lblRespuesta.setText("Resultado");
     lblRespuesta2.setText("Resultado");
     lblRespuesta3.setText("Resultado");
+    cmbA1.setSelectedItem("1");
+    cmbA2.setSelectedItem("1");
+    cmbA3.setSelectedItem("1");
 }
   
     @SuppressWarnings("unchecked")
@@ -65,6 +68,9 @@ void borrarCasillas()
         jLabel14 = new javax.swing.JLabel();
         txtBase = new javax.swing.JTextField();
         txtBase3 = new javax.swing.JTextField();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -91,7 +97,7 @@ void borrarCasillas()
             }
         });
         getContentPane().add(btnCalcular);
-        btnCalcular.setBounds(70, 210, 90, 23);
+        btnCalcular.setBounds(70, 210, 90, 30);
 
         jLabel19.setText("%");
         getContentPane().add(jLabel19);
@@ -103,15 +109,15 @@ void borrarCasillas()
         getContentPane().add(txtGradiente);
         txtGradiente.setBounds(90, 90, 64, 30);
 
-        cmbA1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Seleccionar", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" }));
+        cmbA1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" }));
         getContentPane().add(cmbA1);
-        cmbA1.setBounds(59, 180, 100, 30);
+        cmbA1.setBounds(69, 180, 90, 30);
         getContentPane().add(txtInteres);
         txtInteres.setBounds(90, 120, 64, 30);
 
         jLabel17.setText("%");
         getContentPane().add(jLabel17);
-        jLabel17.setBounds(160, 120, 20, 20);
+        jLabel17.setBounds(160, 120, 20, 30);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel1.setText("F/G");
@@ -134,19 +140,19 @@ void borrarCasillas()
             }
         });
         getContentPane().add(btnCalcular2);
-        btnCalcular2.setBounds(211, 210, 90, 23);
+        btnCalcular2.setBounds(211, 210, 90, 30);
         getContentPane().add(txtGradiente2);
         txtGradiente2.setBounds(240, 90, 64, 30);
 
-        cmbA2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Seleccionar", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" }));
+        cmbA2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" }));
         getContentPane().add(cmbA2);
-        cmbA2.setBounds(200, 180, 100, 30);
+        cmbA2.setBounds(210, 180, 90, 30);
         getContentPane().add(txtInteres2);
         txtInteres2.setBounds(240, 120, 64, 30);
 
         jLabel3.setText("Gradiente:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(170, 90, 66, 14);
+        jLabel3.setBounds(170, 90, 66, 30);
 
         jLabel4.setText("Resultado:");
         getContentPane().add(jLabel4);
@@ -182,13 +188,13 @@ void borrarCasillas()
             }
         });
         getContentPane().add(btnCalcular3);
-        btnCalcular3.setBounds(381, 210, 90, 23);
+        btnCalcular3.setBounds(381, 210, 90, 30);
         getContentPane().add(txtGradiente3);
         txtGradiente3.setBounds(410, 90, 64, 30);
 
-        cmbA3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Seleccionar", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" }));
+        cmbA3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" }));
         getContentPane().add(cmbA3);
-        cmbA3.setBounds(369, 180, 100, 30);
+        cmbA3.setBounds(380, 180, 90, 30);
         getContentPane().add(txtInteres3);
         txtInteres3.setBounds(410, 120, 64, 30);
 
@@ -209,13 +215,25 @@ void borrarCasillas()
         getContentPane().add(txtBase3);
         txtBase3.setBounds(410, 150, 64, 30);
 
+        jLabel22.setText("Años:");
+        getContentPane().add(jLabel22);
+        jLabel22.setBounds(30, 180, 41, 30);
+
+        jLabel21.setText("Años:");
+        getContentPane().add(jLabel21);
+        jLabel21.setBounds(170, 180, 41, 30);
+
+        jLabel20.setText("Años:");
+        getContentPane().add(jLabel20);
+        jLabel20.setBounds(340, 180, 41, 30);
+
         jLabel16.setText("Base:");
         getContentPane().add(jLabel16);
         jLabel16.setBounds(360, 150, 50, 20);
 
         jLabel5.setText("Gradiente:");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(340, 90, 66, 14);
+        jLabel5.setBounds(340, 90, 66, 30);
 
         jLabel6.setText("Interes:");
         getContentPane().add(jLabel6);
@@ -251,11 +269,11 @@ void borrarCasillas()
             }
         });
         getContentPane().add(btnReg);
-        btnReg.setBounds(500, 260, 50, 40);
+        btnReg.setBounds(510, 260, 50, 40);
 
         jLabel7.setText("Gradiente:");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(20, 90, 66, 14);
+        jLabel7.setBounds(20, 90, 66, 30);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel8.setText("P/G");
@@ -558,6 +576,9 @@ void borrarCasillas()
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

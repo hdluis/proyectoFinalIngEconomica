@@ -17,6 +17,7 @@ void borrarCasillas()
     TxtCantidadInicial.setText(null); 
     TxtInteres.setText(null); 
     lblResultado.setText("Resultado"); 
+    ComboAnio1.setSelectedItem("1");
 }
     
     @SuppressWarnings("unchecked")
@@ -148,7 +149,7 @@ void borrarCasillas()
         lblResultado.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblResultado.setText("Resultado aqui");
         getContentPane().add(lblResultado);
-        lblResultado.setBounds(100, 190, 100, 30);
+        lblResultado.setBounds(100, 190, 170, 30);
 
         jLabel7.setText("Resultado:");
         getContentPane().add(jLabel7);

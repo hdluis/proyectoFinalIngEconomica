@@ -104,9 +104,9 @@ void borrarCasillas()
 
         jLabel6.setText("Periodo Compuesto:");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(120, 160, 130, 30);
+        jLabel6.setBounds(120, 160, 140, 30);
         getContentPane().add(txtPeriodoc);
-        txtPeriodoc.setBounds(230, 160, 40, 30);
+        txtPeriodoc.setBounds(240, 160, 40, 30);
         getContentPane().add(txtPrincipal);
         txtPrincipal.setBounds(70, 100, 90, 30);
         getContentPane().add(txtInteres);
@@ -202,7 +202,7 @@ void borrarCasillas()
             txtPeriodoc.setVisible(true);
             jLabel6.setVisible(true);
             txtInteres.setVisible(true);
-            jLabel4.setVisible(true);
+            jLabel3.setVisible(true);
             txtPrincipal.setVisible(false);
             jLabel4.setVisible(false);
             txtPeriodos.setVisible(false);

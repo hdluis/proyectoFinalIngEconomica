@@ -22,6 +22,8 @@ public class FSU extends javax.swing.JFrame {
     TxtPorcentaje2.setText(null);
     lblResultado.setText("Resultado");
     lblResultado2.setText("Resultado");
+    ComboAnio1.setSelectedItem("1");
+    ComboAnio2.setSelectedItem("1");
 }
   
     @SuppressWarnings("unchecked")
@@ -134,7 +136,7 @@ public class FSU extends javax.swing.JFrame {
         lblResultado.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblResultado.setText("Resultado");
         getContentPane().add(lblResultado);
-        lblResultado.setBounds(130, 270, 90, 20);
+        lblResultado.setBounds(140, 270, 80, 20);
 
         BotonA.setText("Calcular Valor  Presente (A)");
         BotonA.addActionListener(new java.awt.event.ActionListener() {
