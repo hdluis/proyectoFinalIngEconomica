@@ -82,10 +82,6 @@ public class FormPrincipal extends javax.swing.JFrame {
         BotonFdeA = new javax.swing.JButton();
         btnInterpolacion = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Ingenieria Economica");
@@ -261,23 +257,7 @@ public class FormPrincipal extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Principal.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 800, 530);
-
-        jMenuBar1.setBackground(new java.awt.Color(51, 51, 51));
-        jMenuBar1.setBorder(null);
-        jMenuBar1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-
-        jMenu1.setText("Archivo");
-        jMenuBar1.add(jMenu1);
-
-        jMenu2.setText("Herramientas del Sistema");
-
-        jMenuItem1.setText("Graficadora Flujo de Efectivo");
-        jMenu2.add(jMenuItem1);
-
-        jMenuBar1.add(jMenu2);
-
-        setJMenuBar(jMenuBar1);
+        jLabel1.setBounds(0, 0, 800, 550);
 
         java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
         setBounds((screenSize.width-815)/2, (screenSize.height-585)/2, 815, 585);
@@ -390,9 +370,5 @@ public class FormPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
     // End of variables declaration//GEN-END:variables
 }

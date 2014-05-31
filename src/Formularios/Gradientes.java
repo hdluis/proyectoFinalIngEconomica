@@ -1,5 +1,7 @@
 package Formularios;
 
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -33,6 +35,25 @@ void borrarCasillas()
     cmbA2.setSelectedItem("1");
     cmbA3.setSelectedItem("1");
 }
+
+//CAJAS DE TEXTO SOLO NUMEROS
+    public void sNumeros(JTextField a)
+    {
+      a.addKeyListener(new KeyAdapter() {
+         public void keyTyped(KeyEvent e){
+               char c = e.getKeyChar();
+               
+               if(!Character.isDigit(c))
+               {
+                   getToolkit().beep();
+                   e.consume();
+                }
+         }
+     
+      });
+      
+    
+    } //Fin sNumeros
   
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
