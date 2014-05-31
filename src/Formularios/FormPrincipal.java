@@ -62,7 +62,6 @@ public class FormPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jDesktopPane1 = new javax.swing.JDesktopPane();
         btnFlujoEfectivo = new javax.swing.JButton();
         btnValorDinero = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
@@ -87,17 +86,6 @@ public class FormPrincipal extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
-
-        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
-        jDesktopPane1.setLayout(jDesktopPane1Layout);
-        jDesktopPane1Layout.setHorizontalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jDesktopPane1Layout.setVerticalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Ingenieria Economica");
@@ -285,11 +273,6 @@ public class FormPrincipal extends javax.swing.JFrame {
         jMenu2.setText("Herramientas del Sistema");
 
         jMenuItem1.setText("Graficadora Flujo de Efectivo");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
-            }
-        });
         jMenu2.add(jMenuItem1);
 
         jMenuBar1.add(jMenu2);
@@ -351,10 +334,6 @@ public class FormPrincipal extends javax.swing.JFrame {
         formtasas.setVisible(true);
     }//GEN-LAST:event_btnTasasActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
-
     private void btnGradgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGradgActionPerformed
         GradientesGeometricos formgradg = new GradientesGeometricos();
         formgradg.setVisible(true);
@@ -402,7 +381,6 @@ public class FormPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton btnSalir;
     private javax.swing.JButton btnTasas;
     private javax.swing.JButton btnValorDinero;
-    private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;

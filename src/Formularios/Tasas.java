@@ -195,6 +195,13 @@ void borrarCasillas()
             vvInt = 3;
             txtPeriodoc.setVisible(false);
             jLabel6.setVisible(false);
+            txtInteres.setVisible(true);
+            jLabel3.setVisible(true);
+            txtPrincipal.setVisible(false);
+            jLabel4.setVisible(false);
+            txtPeriodos.setVisible(false);
+            jLabel5.setVisible(false);
+
         }
         if (vInt == "Tasa Efectiva Para Cualquier Periodo")
         {
@@ -216,7 +223,6 @@ void borrarCasillas()
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
         double inte = 0, presente = 0, perio = 0, comp = 0, resultado = 0, porcen = 0, res1;
-        porcen = inte/100;
          
         vInt = cmbTasa.getSelectedItem().toString();
         
@@ -236,10 +242,12 @@ void borrarCasillas()
             resultado = presente * (Math.pow((1+(porcen/comp)),Math.abs(perio)));
             lblResultado.setText(Double.toString(resultado));
         }
-        if (vInt == "Tasa Efectiva")
+        if (vInt == "Tasa Efectiva Capitalizacion Continua")
         {
-           //resultado = presente * (Math.pow((1+porcen),Math.abs(perio)));
-            //lblResultado.setText(Double.toString(resultado));
+            inte = Double.parseDouble(txtInteres.getText().toString());
+            porcen = (inte/100)+1;
+            resultado = Math.log(porcen);
+            lblResultado.setText(Double.toString(resultado));
         }
         if (vInt == "Tasa Efectiva Para Cualquier Periodo")
         {
