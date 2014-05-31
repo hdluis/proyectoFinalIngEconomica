@@ -7,6 +7,10 @@ public class Interpolacion extends javax.swing.JFrame {
         btnReg.setOpaque(false);
         btnReg.setContentAreaFilled(false);
         btnReg.setBorderPainted(false);
+        
+        btnTablas.setOpaque(false);
+        btnTablas.setContentAreaFilled(false);
+        btnTablas.setBorderPainted(false);
     }
     
     void borrarCasillas()
@@ -28,6 +32,8 @@ public class Interpolacion extends javax.swing.JFrame {
         txtvalor1 = new javax.swing.JTextField();
         txtvalor2 = new javax.swing.JTextField();
         txtporcentaje3 = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        btnTablas = new javax.swing.JButton();
         jLabel18 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         bntBorrar = new javax.swing.JButton();
@@ -43,7 +49,9 @@ public class Interpolacion extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(360, 270));
         setMinimumSize(new java.awt.Dimension(360, 270));
+        setPreferredSize(new java.awt.Dimension(360, 270));
         setResizable(false);
         getContentPane().setLayout(null);
         getContentPane().add(txtporcentaje1);
@@ -62,6 +70,19 @@ public class Interpolacion extends javax.swing.JFrame {
         txtvalor2.setBounds(130, 140, 80, 30);
         getContentPane().add(txtporcentaje3);
         txtporcentaje3.setBounds(20, 190, 70, 30);
+
+        jLabel7.setText("Tablas.");
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(230, 150, 50, 20);
+
+        btnTablas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/list5.png"))); // NOI18N
+        btnTablas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTablasActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnTablas);
+        btnTablas.setBounds(270, 130, 70, 60);
 
         jLabel18.setText("%");
         getContentPane().add(jLabel18);
@@ -168,6 +189,11 @@ public class Interpolacion extends javax.swing.JFrame {
         borrarCasillas();
     }//GEN-LAST:event_bntBorrarActionPerformed
 
+    private void btnTablasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTablasActionPerformed
+       Tablas formt = new Tablas();
+       formt.setVisible(true);
+    }//GEN-LAST:event_btnTablasActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -206,6 +232,7 @@ public class Interpolacion extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bntBorrar;
     private javax.swing.JButton btnReg;
+    private javax.swing.JButton btnTablas;
     private javax.swing.JButton calcular;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel18;
@@ -216,6 +243,7 @@ public class Interpolacion extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel lblResultado;
     private javax.swing.JTextField txtporcentaje1;
     private javax.swing.JTextField txtporcentaje2;

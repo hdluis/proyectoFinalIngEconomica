@@ -175,7 +175,7 @@ void borrarCasillas()
                 i = inte/100;
                 
                 p1 = (1+gra)/(1+i);
-                p2 = 1 - (Math.pow((p1), Math.abs(n)));
+                p2 = 1 - (Math.pow(p1, n));
                 p3 = i-gra;
                 pf = p2/p3;
                 
@@ -189,13 +189,13 @@ void borrarCasillas()
 
                 //asignamoms valores al evento en el año 0
                 Anio[n+1]=0;
-                Cantidad[n+1]=(int)pf;
+                Cantidad[n+1]=pf;
                 Tipo[n+1]="Entrada";
                 //asignamos valores de A
                 for(int j=1;j<=n;j++)
                 {
                     Anio[j]=j;
-                    Cantidad[j]=(int)pf+(gra*j);
+                    Cantidad[j]=bas+(gra*j);
                     Tipo[j]="Salida";
                 }
                 PanelGrafico  Panel = new PanelGrafico(anioinicio,aniofinal, Cantidad,Anio,Tipo,TotalAnios);
