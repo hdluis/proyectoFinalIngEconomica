@@ -1,10 +1,10 @@
 package Formularios;
 
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 public class VAN extends javax.swing.JFrame {
-
 
     public VAN() {
         initComponents();
@@ -67,7 +67,7 @@ public class VAN extends javax.swing.JFrame {
         getContentPane().add(jLabel2);
         jLabel2.setBounds(20, 70, 140, 20);
         getContentPane().add(txtTMAR);
-        txtTMAR.setBounds(20, 140, 100, 20);
+        txtTMAR.setBounds(20, 140, 100, 30);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo13.jpg"))); // NOI18N
         getContentPane().add(jLabel3);
@@ -80,33 +80,61 @@ public class VAN extends javax.swing.JFrame {
         int eventos =Integer.parseInt(cboEventos.getSelectedItem().toString());
         double interes = Double.parseDouble(txtTMAR.getText().toString());
         double tmar = interes/100;
+        double pa, pf;
+
+        //Varibales [2] del Vector
+        String Dialognombre2[] = new String [1000];
+        double Dialogci2[] = new double [1000];
+        double Dialogca2[] = new double [1000];
+        double Dialogvs2[] = new double [1000];
+        double Dialogvida2[] = new double [1000];
+        double result[] = new double [1000];
         
-        for(int i=1; i<=eventos; i++) // for dependiendo del Num de Eventos q ingreso e usuario
-        {
+        //________________________________________________________
+        
+        for(int j=1; j<=eventos; j++) // for dependiendo del Num de Eventos q ingreso e usuario
+        {           
             JTextField  nombre = new JTextField(); // textbox para cantidad
             JTextField  ci = new JTextField();
             JTextField  ca = new JTextField();
             JTextField  vs = new JTextField();
             JTextField  vida = new JTextField();
-            double result = 0, pa, pf;
-            
+                   
             Object[] mensaje =  {    //objeto con los controles pa el inputdialog
                 "Nombre: ", nombre, "Costo Inicial: ", ci, "Costo Anual", ca, "Valor de Salvamento: ", vs, "Vida: ", vida
             };
                 int Opcion = JOptionPane.showConfirmDialog(null, mensaje,"Proyectos", JOptionPane.OK_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE);
                 if(Opcion==JOptionPane.OK_OPTION) // si el usiario presiona aceptar
                 {
-                    int Dialogci =Integer.parseInt(ci.getText());
-                    int Dialogca=Integer.parseInt(ca.getText());
-                    int Dialogvs=Integer.parseInt(vs.getText());
-                    int Dialogvida=Integer.parseInt(vida.getText());
+                    String Dialognombre = (nombre.getText());
+                    double Dialogci =Integer.parseInt(ci.getText());
+                    double Dialogca=Integer.parseInt(ca.getText());
+                    double Dialogvs=Integer.parseInt(vs.getText());
+                    double Dialogvida=Integer.parseInt(vida.getText());
                     
-                    pa = Dialogca *((Math.pow((1+tmar), Dialogvida)-1) / (tmar * (Math.pow((1+tmar), Dialogvida))));
-                    pf = Dialogvs / (Math.pow((1+tmar), Dialogvida));
-                    result = 0 - Dialogci - pa + pf;
-                    JOptionPane.showMessageDialog(null, "El resultado es: "+ result);
+                    //Vectorizando 
+                        Dialognombre2[j] = Dialognombre;
+                        Dialogci2[j]=Dialogci;
+                        Dialogca2[j]=Dialogca;
+                        Dialogvs2[j]=Dialogvs;
+                        Dialogvida2[j]=Dialogvida;
+                        
+                        pa = Dialogca *((Math.pow((1+tmar), Dialogvida)-1) / (tmar * (Math.pow((1+tmar), Dialogvida))));
+                        pf = Dialogvs / (Math.pow((1+tmar), Dialogvida));
+                        result[j] = 0 - Dialogci - pa + pf;
+                        JOptionPane.showMessageDialog(null, "El resultado es: "+ result[j]);
+                        
+                        /*Globalizacion
+                        DatosGraficar global = new DatosGraficar();
+                        global.setEvento(eventos);
+                        global.setNombre(Dialognombre2[j]);
+                        global.setValores(Dialogci2[j], Dialogca2[j], Dialogvs2[j], Dialogvida2[j]);
+                        ________________________________________________________*/
+                         
                 }
         }
+        ProyectosVAN formv = new ProyectosVAN(Dialognombre2, Dialogci2, Dialogca2, Dialogvs2, Dialogvida2);
+        formv.setVisible(true);
     }//GEN-LAST:event_btnComenzarActionPerformed
 
     private void btnRegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegActionPerformed
@@ -154,6 +182,6 @@ public class VAN extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JTextField txtTMAR;
+    public static javax.swing.JTextField txtTMAR;
     // End of variables declaration//GEN-END:variables
 }
