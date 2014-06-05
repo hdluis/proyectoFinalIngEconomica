@@ -265,6 +265,7 @@ public class FormPrincipal extends javax.swing.JFrame {
 
     private void btnFlujoEfectivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFlujoEfectivoActionPerformed
     FlujoEfectivo formflujo = new FlujoEfectivo();
+    
     formflujo.setVisible(true);
     }//GEN-LAST:event_btnFlujoEfectivoActionPerformed
 

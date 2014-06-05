@@ -133,7 +133,7 @@ public class VAN extends javax.swing.JFrame {
                          
                 }
         }
-        ProyectosVAN formv = new ProyectosVAN(Dialognombre2, Dialogci2, Dialogca2, Dialogvs2, Dialogvida2);
+        ProyectosVAN formv = new ProyectosVAN(Dialognombre2, Dialogci2, Dialogca2, Dialogvs2, Dialogvida2, eventos);
         formv.setVisible(true);
     }//GEN-LAST:event_btnComenzarActionPerformed
 

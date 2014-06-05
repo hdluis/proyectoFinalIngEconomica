@@ -10,16 +10,20 @@ public class ProyectosVAN extends javax.swing.JFrame {
     public double Costoa[];
     public double Valors[];
     public double Vidau[];
+    public double Eventos;
     
-    public ProyectosVAN(String nombre[], double ci[], double ca[], double vs[], double vid[]) {
+    public ProyectosVAN(String nombre[], double ci[], double ca[], double vs[], double vid[], double eve) {
         initComponents();
         btnReg.setOpaque(false);
         btnReg.setContentAreaFilled(false);
         btnReg.setBorderPainted(false);
         
-        Nombre1 = nombre[];
-        
-        
+        Nombre1 = nombre;
+        Costoi = ci;
+        Costoa = ca;
+        Valors = vs;
+        Vidau = vid;
+        Eventos = eve;
     }
 
     /**
@@ -272,73 +276,55 @@ public class ProyectosVAN extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRegActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        int eve = (new DatosGraficar().getValor5());
-        int cont=0;
         
-        JOptionPane.showInputDialog(eve);
-        if(eve == 1)
-        {
-        jlnm1.setText(new DatosGraficar().getNombre());
-        jlci1.setText(Double.toString(new DatosGraficar().getValor1()));
-        ca1.setText(Double.toString(new DatosGraficar().getValor2()));
-        vs1.setText(Double.toString(new DatosGraficar().getValor3()));
-        vd1.setText(Double.toString(new DatosGraficar().getValor4()));
-        }
-              
-        if(eve == 2)
-        {
-            cont = 1;
-            for (int j=1; j<=2; j++)
-                {
-                if (cont == 1)
-                        {
-                        jlnm1.setText(new DatosGraficar().getNombre());
-                        jlci1.setText(Double.toString(new DatosGraficar().getValor1()));
-                        ca1.setText(Double.toString(new DatosGraficar().getValor2()));
-                        vs1.setText(Double.toString(new DatosGraficar().getValor3()));
-                        vd1.setText(Double.toString(new DatosGraficar().getValor4()));
-                        }
+        for (int j=1; j<=Eventos; j++)
+                {  
+                    if (j == 1)
+                    {
+                    jlnm1.setText(Nombre1[j]);
+                    jlci1.setText((Double.toString(Costoi[j])));
+                    ca1.setText((Double.toString(Costoa[j])));
+                    vs1.setText((Double.toString(Valors[j])));
+                    vd1.setText((Double.toString(Vidau[j])));
+                    }
                     
-                    if (cont == 2)
-                        {
-                        jlnm2.setText(new DatosGraficar().getNombre());
-                        jlci2.setText(Double.toString(new DatosGraficar().getValor1()));
-                        ca2.setText(Double.toString(new DatosGraficar().getValor2()));
-                        vs2.setText(Double.toString(new DatosGraficar().getValor3()));
-                        vd2.setText(Double.toString(new DatosGraficar().getValor4()));
-                        }
-                        cont++;
+                    if (j == 2)
+                    {
+                    jlnm2.setText(Nombre1[j]);
+                    jlci2.setText((Double.toString(Costoi[j])));
+                    ca2.setText((Double.toString(Costoa[j])));
+                    vs2.setText((Double.toString(Valors[j])));
+                    vd2.setText((Double.toString(Vidau[j])));
+                    }
+                    
+                    if (j == 3)
+                    {
+                    jlnm3.setText(Nombre1[j]);
+                    jlci3.setText((Double.toString(Costoi[j])));
+                    ca3.setText((Double.toString(Costoa[j])));
+                    vs3.setText((Double.toString(Valors[j])));
+                    vd3.setText((Double.toString(Vidau[j])));
+                    }
+                    
+                    if (j == 4)
+                    {
+                    jlnm4.setText(Nombre1[j]);
+                    jlci4.setText((Double.toString(Costoi[j])));
+                    ca4.setText((Double.toString(Costoa[j])));
+                    vs4.setText((Double.toString(Valors[j])));
+                    vd4.setText((Double.toString(Vidau[j])));
+                    }
+                    
+                    if (j == 5)
+                    {
+                    jlnm5.setText(Nombre1[j]);
+                    jlci5.setText((Double.toString(Costoi[j])));
+                    ca5.setText((Double.toString(Costoa[j])));
+                    vs5.setText((Double.toString(Valors[j])));
+                    vd5.setText((Double.toString(Vidau[j])));
+                    }
+                    
                 }
-        }
-        else
-            
-        if(eve == 3)
-        {
-        jlnm1.setText(new DatosGraficar().getNombre());
-        jlci1.setText(Double.toString(new DatosGraficar().getValor1()));
-        ca1.setText(Double.toString(new DatosGraficar().getValor2()));
-        vs1.setText(Double.toString(new DatosGraficar().getValor3()));
-        vd1.setText(Double.toString(new DatosGraficar().getValor4()));
-        }
-        
-        if(eve == 4)
-        {
-        jlnm1.setText(new DatosGraficar().getNombre());
-        jlci1.setText(Double.toString(new DatosGraficar().getValor1()));
-        ca1.setText(Double.toString(new DatosGraficar().getValor2()));
-        vs1.setText(Double.toString(new DatosGraficar().getValor3()));
-        vd1.setText(Double.toString(new DatosGraficar().getValor4()));
-        }
-        
-        if(eve == 5)
-        {
-        jlnm1.setText(new DatosGraficar().getNombre());
-        jlci1.setText(Double.toString(new DatosGraficar().getValor1()));
-        ca1.setText(Double.toString(new DatosGraficar().getValor2()));
-        vs1.setText(Double.toString(new DatosGraficar().getValor3()));
-        vd1.setText(Double.toString(new DatosGraficar().getValor4()));
-        }
-        
     }//GEN-LAST:event_formWindowOpened
 
     /**
@@ -371,7 +357,7 @@ public class ProyectosVAN extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ProyectosVAN().setVisible(true);
+               // new ProyectosVAN().setVisible(true);
             }
         });
     }
