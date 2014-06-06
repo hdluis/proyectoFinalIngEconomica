@@ -230,8 +230,10 @@ void borrarCasillas()
         {
             presente = Double.parseDouble(txtPrincipal.getText().toString());
             inte = Double.parseDouble(txtInteres.getText().toString());
+            perio = Integer.parseInt(cmbTasa.getSelectedItem().toString());
             
-            resultado = presente * (Math.pow((1+porcen),Math.abs(perio)));
+            porcen = inte/100;
+            resultado = presente * (Math.pow((1+porcen), perio));
             lblResultado.setText(Double.toString(resultado));
         }
         if (vInt == "Tasa Nominal")

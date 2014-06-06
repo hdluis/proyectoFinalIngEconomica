@@ -9,6 +9,9 @@ public class TIR extends javax.swing.JFrame {
 
     public TIR() {
         initComponents();
+        btnReg.setOpaque(false);
+        btnReg.setContentAreaFilled(false);
+        btnReg.setBorderPainted(false);
     }
 
     /**
@@ -25,7 +28,10 @@ public class TIR extends javax.swing.JFrame {
         btnComenzar = new javax.swing.JButton();
         btnReg = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
+        lblResultado = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         txtCantidadd = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(360, 270));
@@ -34,13 +40,13 @@ public class TIR extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(null);
 
-        cboEventos.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5" }));
+        cboEventos.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" }));
         getContentPane().add(cboEventos);
-        cboEventos.setBounds(30, 80, 100, 30);
+        cboEventos.setBounds(30, 80, 70, 30);
 
-        jLabel2.setText("Numero de eventos:");
+        jLabel2.setText("Eventos:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(30, 60, 140, 20);
+        jLabel2.setBounds(30, 60, 100, 20);
 
         btnComenzar.setText("Comenzar");
         btnComenzar.addActionListener(new java.awt.event.ActionListener() {
@@ -49,7 +55,7 @@ public class TIR extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnComenzar);
-        btnComenzar.setBounds(280, 80, 110, 30);
+        btnComenzar.setBounds(250, 80, 90, 30);
 
         btnReg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icon1.png"))); // NOI18N
         btnReg.addActionListener(new java.awt.event.ActionListener() {
@@ -58,13 +64,26 @@ public class TIR extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnReg);
-        btnReg.setBounds(340, 130, 50, 40);
+        btnReg.setBounds(280, 180, 50, 40);
 
-        jLabel3.setText("Cantidad deseada");
+        jLabel3.setText("TIR:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(160, 60, 120, 20);
+        jLabel3.setBounds(30, 190, 70, 20);
+
+        lblResultado.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        lblResultado.setText("TIR");
+        getContentPane().add(lblResultado);
+        lblResultado.setBounds(110, 190, 70, 20);
+
+        jLabel5.setText("Deseado:");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(120, 60, 100, 20);
         getContentPane().add(txtCantidadd);
-        txtCantidadd.setBounds(160, 80, 100, 30);
+        txtCantidadd.setBounds(120, 80, 100, 30);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo15.jpg"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 410, 250);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -103,10 +122,10 @@ public class TIR extends javax.swing.JFrame {
             if ((int)result1 == cantidadd)
             {
                 JOptionPane.showMessageDialog(null, "TIR es: " + tasa);
+                lblResultado.setText(Double.toString(tasa));
                 return;
             }
         }
-        
     }//GEN-LAST:event_btnComenzarActionPerformed
 
     private void btnRegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegActionPerformed
@@ -151,8 +170,11 @@ public class TIR extends javax.swing.JFrame {
     private javax.swing.JButton btnComenzar;
     private javax.swing.JButton btnReg;
     private javax.swing.JComboBox cboEventos;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel lblResultado;
     public static javax.swing.JTextField txtCantidadd;
     // End of variables declaration//GEN-END:variables
 }

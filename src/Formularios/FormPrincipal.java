@@ -56,6 +56,14 @@ public class FormPrincipal extends javax.swing.JFrame {
         BotonPdeA.setOpaque(false);
         BotonPdeA.setContentAreaFilled(false);
         BotonPdeA.setBorderPainted(false);
+        
+        bntVAN.setOpaque(false);
+        bntVAN.setContentAreaFilled(false);
+        bntVAN.setBorderPainted(false);
+        
+        btnTIR.setOpaque(false);
+        btnTIR.setContentAreaFilled(false);
+        btnTIR.setBorderPainted(false);
     }
 
     @SuppressWarnings("unchecked")
@@ -70,6 +78,10 @@ public class FormPrincipal extends javax.swing.JFrame {
         btnGradg = new javax.swing.JButton();
         btnGrad = new javax.swing.JButton();
         btnTasas = new javax.swing.JButton();
+        bntVAN = new javax.swing.JButton();
+        btnTIR = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -163,6 +175,40 @@ public class FormPrincipal extends javax.swing.JFrame {
         });
         getContentPane().add(btnTasas);
         btnTasas.setBounds(150, 270, 60, 50);
+
+        bntVAN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cabinet4.png"))); // NOI18N
+        bntVAN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntVANActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bntVAN);
+        bntVAN.setBounds(450, 110, 60, 50);
+
+        btnTIR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/seo19.png"))); // NOI18N
+        btnTIR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTIRActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnTIR);
+        btnTIR.setBounds(550, 110, 60, 50);
+
+        jLabel12.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(239, 241, 194));
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel12.setText("TIR"); // NOI18N
+        jLabel12.setToolTipText("");
+        getContentPane().add(jLabel12);
+        jLabel12.setBounds(550, 160, 30, 30);
+
+        jLabel11.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(239, 241, 194));
+        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel11.setText("VAN"); // NOI18N
+        jLabel11.setToolTipText("");
+        getContentPane().add(jLabel11);
+        jLabel11.setBounds(450, 160, 40, 30);
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(239, 241, 194));
@@ -320,6 +366,16 @@ public class FormPrincipal extends javax.swing.JFrame {
         formgradg.setVisible(true);
     }//GEN-LAST:event_btnGradgActionPerformed
 
+    private void bntVANActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntVANActionPerformed
+        VAN formv = new VAN();
+        formv.setVisible(true);
+    }//GEN-LAST:event_bntVANActionPerformed
+
+    private void btnTIRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTIRActionPerformed
+        TIR formt = new TIR();
+        formt.setVisible(true);
+    }//GEN-LAST:event_btnTIRActionPerformed
+
     public static void main(String args[]) {
   
         try {
@@ -353,6 +409,7 @@ public class FormPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BotonFdeA;
     private javax.swing.JButton BotonPdeA;
+    private javax.swing.JButton bntVAN;
     private javax.swing.JButton btnFlujoEfectivo;
     private javax.swing.JButton btnGrad;
     private javax.swing.JButton btnGradg;
@@ -360,10 +417,13 @@ public class FormPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton btnInterpolacion;
     private javax.swing.JButton btnRegla;
     private javax.swing.JButton btnSalir;
+    private javax.swing.JButton btnTIR;
     private javax.swing.JButton btnTasas;
     private javax.swing.JButton btnValorDinero;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

@@ -124,12 +124,6 @@ public class VAN extends javax.swing.JFrame {
                         result[j] = 0 - Dialogci - pa + pf;
                         JOptionPane.showMessageDialog(null, "El resultado es: "+ result[j]);
                         
-                        /*Globalizacion
-                        DatosGraficar global = new DatosGraficar();
-                        global.setEvento(eventos);
-                        global.setNombre(Dialognombre2[j]);
-                        global.setValores(Dialogci2[j], Dialogca2[j], Dialogvs2[j], Dialogvida2[j]);
-                        ________________________________________________________*/
                          
                 }
         }

@@ -18,6 +18,36 @@ public class ProyectosVAN extends javax.swing.JFrame {
         btnReg.setContentAreaFilled(false);
         btnReg.setBorderPainted(false);
         
+        jlnm1.setVisible(false);
+        jlci1.setVisible(false);
+        ca1.setVisible(false);
+        vs1.setVisible(false);
+        vd1.setVisible(false);
+        
+        jlnm2.setVisible(false);
+        jlci2.setVisible(false);
+        ca2.setVisible(false);
+        vs2.setVisible(false);
+        vd2.setVisible(false);
+        
+        jlnm3.setVisible(false);
+        jlci3.setVisible(false);
+        ca3.setVisible(false);
+        vs3.setVisible(false);
+        vd3.setVisible(false);
+        
+        jlnm4.setVisible(false);
+        jlci4.setVisible(false);
+        ca4.setVisible(false);
+        vs4.setVisible(false);
+        vd4.setVisible(false);
+        
+        jlnm5.setVisible(false);
+        jlci5.setVisible(false);
+        ca5.setVisible(false);
+        vs5.setVisible(false);
+        vd5.setVisible(false);
+        
         Nombre1 = nombre;
         Costoi = ci;
         Costoa = ca;
@@ -77,6 +107,7 @@ public class ProyectosVAN extends javax.swing.JFrame {
         resp5 = new javax.swing.JLabel();
         mejor = new javax.swing.JLabel();
         btnReg = new javax.swing.JButton();
+        mejor1 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -91,169 +122,190 @@ public class ProyectosVAN extends javax.swing.JFrame {
         });
         getContentPane().setLayout(null);
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel1.setText("Vida:");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(50, 180, 80, 30);
+        jLabel1.setBounds(50, 180, 90, 30);
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel2.setText("Nombre:");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(50, 60, 90, 30);
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel3.setText("Costo Inicial:");
         getContentPane().add(jLabel3);
         jLabel3.setBounds(50, 90, 90, 30);
 
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel4.setText("Costo Anual:");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(50, 120, 90, 30);
+        jLabel4.setBounds(50, 120, 110, 30);
 
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel5.setText("Valor Salvamento:");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(50, 150, 90, 30);
+        jLabel5.setBounds(50, 150, 110, 30);
 
+        jlnm5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jlnm5.setText("nm1");
         getContentPane().add(jlnm5);
-        jlnm5.setBounds(400, 70, 70, 14);
+        jlnm5.setBounds(430, 70, 80, 14);
 
+        jlnm4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jlnm4.setText("nm1");
         getContentPane().add(jlnm4);
-        jlnm4.setBounds(350, 70, 70, 14);
+        jlnm4.setBounds(380, 70, 80, 14);
 
+        jlnm1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jlnm1.setText("nm1");
         getContentPane().add(jlnm1);
-        jlnm1.setBounds(150, 70, 70, 14);
+        jlnm1.setBounds(180, 70, 80, 14);
 
+        jlnm2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jlnm2.setText("nm1");
         getContentPane().add(jlnm2);
-        jlnm2.setBounds(220, 70, 70, 14);
+        jlnm2.setBounds(250, 70, 80, 14);
 
+        jlnm3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jlnm3.setText("nm1");
         getContentPane().add(jlnm3);
-        jlnm3.setBounds(290, 70, 70, 14);
+        jlnm3.setBounds(320, 70, 80, 14);
 
         jlci5.setText("ci1");
         getContentPane().add(jlci5);
-        jlci5.setBounds(400, 100, 60, 14);
+        jlci5.setBounds(430, 100, 70, 14);
 
         jlci2.setText("ci1");
         getContentPane().add(jlci2);
-        jlci2.setBounds(220, 100, 60, 14);
+        jlci2.setBounds(250, 100, 70, 14);
 
         jlci4.setText("ci1");
         getContentPane().add(jlci4);
-        jlci4.setBounds(350, 100, 60, 14);
+        jlci4.setBounds(380, 100, 70, 14);
 
         jlci3.setText("ci1");
         getContentPane().add(jlci3);
-        jlci3.setBounds(290, 100, 60, 14);
+        jlci3.setBounds(320, 100, 70, 14);
 
         jlci1.setText("ci1");
         getContentPane().add(jlci1);
-        jlci1.setBounds(150, 100, 60, 14);
+        jlci1.setBounds(180, 100, 70, 14);
 
         ca2.setText("ca1");
         getContentPane().add(ca2);
-        ca2.setBounds(220, 130, 30, 14);
+        ca2.setBounds(250, 130, 50, 14);
 
         ca5.setText("ca1");
         getContentPane().add(ca5);
-        ca5.setBounds(400, 130, 30, 14);
+        ca5.setBounds(430, 130, 50, 14);
 
         ca1.setText("ca1");
         getContentPane().add(ca1);
-        ca1.setBounds(150, 130, 30, 14);
+        ca1.setBounds(180, 130, 50, 14);
 
         ca3.setText("ca1");
         getContentPane().add(ca3);
-        ca3.setBounds(290, 130, 30, 14);
+        ca3.setBounds(320, 130, 50, 14);
 
         ca4.setText("ca1");
         getContentPane().add(ca4);
-        ca4.setBounds(350, 130, 30, 14);
+        ca4.setBounds(380, 130, 50, 14);
 
         vs5.setText("vs1");
         getContentPane().add(vs5);
-        vs5.setBounds(400, 160, 30, 14);
+        vs5.setBounds(430, 160, 50, 14);
 
         vs3.setText("vs1");
         getContentPane().add(vs3);
-        vs3.setBounds(290, 160, 30, 14);
+        vs3.setBounds(320, 160, 50, 14);
 
         vs4.setText("vs1");
         getContentPane().add(vs4);
-        vs4.setBounds(350, 160, 30, 14);
+        vs4.setBounds(380, 160, 50, 14);
 
         vs2.setText("vs1");
         getContentPane().add(vs2);
-        vs2.setBounds(220, 160, 30, 14);
+        vs2.setBounds(250, 160, 50, 14);
 
         vd4.setText("vd1");
         getContentPane().add(vd4);
-        vd4.setBounds(350, 190, 30, 14);
+        vd4.setBounds(380, 190, 50, 14);
 
         vd5.setText("vd1");
         getContentPane().add(vd5);
-        vd5.setBounds(400, 190, 30, 14);
+        vd5.setBounds(430, 190, 50, 14);
 
         vd3.setText("vd1");
         getContentPane().add(vd3);
-        vd3.setBounds(290, 190, 30, 14);
+        vd3.setBounds(320, 190, 50, 14);
 
         vs1.setText("vs1");
         getContentPane().add(vs1);
-        vs1.setBounds(150, 160, 30, 14);
+        vs1.setBounds(180, 160, 50, 14);
 
         vd2.setText("vd1");
         getContentPane().add(vd2);
-        vd2.setBounds(220, 190, 30, 14);
+        vd2.setBounds(250, 190, 50, 14);
 
         vd1.setText("vd1");
         getContentPane().add(vd1);
-        vd1.setBounds(150, 190, 30, 14);
+        vd1.setBounds(180, 190, 50, 14);
 
+        jlnm6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jlnm6.setText("nm1");
         getContentPane().add(jlnm6);
-        jlnm6.setBounds(200, 220, 50, 20);
+        jlnm6.setBounds(180, 220, 70, 20);
 
+        jlnm7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jlnm7.setText("nm1");
         getContentPane().add(jlnm7);
-        jlnm7.setBounds(200, 240, 50, 20);
+        jlnm7.setBounds(180, 240, 70, 20);
 
+        jlnm8.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jlnm8.setText("nm1");
         getContentPane().add(jlnm8);
-        jlnm8.setBounds(200, 260, 50, 20);
+        jlnm8.setBounds(180, 260, 70, 20);
 
+        jlnm9.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jlnm9.setText("nm1");
         getContentPane().add(jlnm9);
-        jlnm9.setBounds(200, 280, 50, 20);
+        jlnm9.setBounds(180, 280, 70, 20);
 
+        jlnm10.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jlnm10.setText("nm1");
         getContentPane().add(jlnm10);
-        jlnm10.setBounds(200, 300, 50, 20);
+        jlnm10.setBounds(180, 300, 70, 20);
 
+        resp1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         resp1.setText("Respuesta1");
         getContentPane().add(resp1);
-        resp1.setBounds(300, 300, 110, 20);
+        resp1.setBounds(280, 300, 110, 20);
 
+        resp2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         resp2.setText("Respuesta1");
         getContentPane().add(resp2);
-        resp2.setBounds(300, 220, 110, 20);
+        resp2.setBounds(280, 220, 110, 20);
 
+        resp3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         resp3.setText("Respuesta1");
         getContentPane().add(resp3);
-        resp3.setBounds(300, 240, 110, 20);
+        resp3.setBounds(280, 240, 110, 20);
 
+        resp4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         resp4.setText("Respuesta1");
         getContentPane().add(resp4);
-        resp4.setBounds(300, 260, 110, 20);
+        resp4.setBounds(280, 260, 110, 20);
 
+        resp5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         resp5.setText("Respuesta1");
         getContentPane().add(resp5);
-        resp5.setBounds(300, 280, 110, 20);
+        resp5.setBounds(280, 280, 110, 20);
 
-        mejor.setText("Mejor");
+        mejor.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        mejor.setText("Mejor:");
         getContentPane().add(mejor);
-        mejor.setBounds(460, 250, 50, 30);
+        mejor.setBounds(440, 220, 50, 30);
 
         btnReg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icon1.png"))); // NOI18N
         btnReg.addActionListener(new java.awt.event.ActionListener() {
@@ -263,6 +315,11 @@ public class ProyectosVAN extends javax.swing.JFrame {
         });
         getContentPane().add(btnReg);
         btnReg.setBounds(510, 290, 50, 40);
+
+        mejor1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        mejor1.setText("Mejor");
+        getContentPane().add(mejor1);
+        mejor1.setBounds(500, 220, 60, 30);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Fondo14.jpg"))); // NOI18N
         getContentPane().add(jLabel6);
@@ -281,6 +338,12 @@ public class ProyectosVAN extends javax.swing.JFrame {
                 {  
                     if (j == 1)
                     {
+                    jlnm1.setVisible(true);
+                    jlci1.setVisible(true);
+                    ca1.setVisible(true);
+                    vs1.setVisible(true);
+                    vd1.setVisible(true);
+                    
                     jlnm1.setText(Nombre1[j]);
                     jlci1.setText((Double.toString(Costoi[j])));
                     ca1.setText((Double.toString(Costoa[j])));
@@ -290,6 +353,12 @@ public class ProyectosVAN extends javax.swing.JFrame {
                     
                     if (j == 2)
                     {
+                    jlnm2.setVisible(true);
+                    jlci2.setVisible(true);
+                    ca2.setVisible(true);
+                    vs2.setVisible(true);
+                    vd2.setVisible(true);
+                    
                     jlnm2.setText(Nombre1[j]);
                     jlci2.setText((Double.toString(Costoi[j])));
                     ca2.setText((Double.toString(Costoa[j])));
@@ -299,6 +368,12 @@ public class ProyectosVAN extends javax.swing.JFrame {
                     
                     if (j == 3)
                     {
+                    jlnm3.setVisible(true);
+                    jlci3.setVisible(true);
+                    ca3.setVisible(true);
+                    vs3.setVisible(true);
+                    vd3.setVisible(true);
+                    
                     jlnm3.setText(Nombre1[j]);
                     jlci3.setText((Double.toString(Costoi[j])));
                     ca3.setText((Double.toString(Costoa[j])));
@@ -308,6 +383,12 @@ public class ProyectosVAN extends javax.swing.JFrame {
                     
                     if (j == 4)
                     {
+                    jlnm4.setVisible(true);
+                    jlci4.setVisible(true);
+                    ca4.setVisible(true);
+                    vs4.setVisible(true);
+                    vd4.setVisible(true);    
+                     
                     jlnm4.setText(Nombre1[j]);
                     jlci4.setText((Double.toString(Costoi[j])));
                     ca4.setText((Double.toString(Costoa[j])));
@@ -317,6 +398,12 @@ public class ProyectosVAN extends javax.swing.JFrame {
                     
                     if (j == 5)
                     {
+                    jlnm5.setVisible(true);
+                    jlci5.setVisible(true);
+                    ca5.setVisible(true);
+                    vs5.setVisible(true);
+                    vd5.setVisible(true);
+                    
                     jlnm5.setText(Nombre1[j]);
                     jlci5.setText((Double.toString(Costoi[j])));
                     ca5.setText((Double.toString(Costoa[j])));
@@ -390,6 +477,7 @@ public class ProyectosVAN extends javax.swing.JFrame {
     private javax.swing.JLabel jlnm8;
     private javax.swing.JLabel jlnm9;
     private javax.swing.JLabel mejor;
+    private javax.swing.JLabel mejor1;
     private javax.swing.JLabel resp1;
     private javax.swing.JLabel resp2;
     private javax.swing.JLabel resp3;
