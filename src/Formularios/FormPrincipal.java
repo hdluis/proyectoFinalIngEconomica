@@ -64,6 +64,10 @@ public class FormPrincipal extends javax.swing.JFrame {
         btnTIR.setOpaque(false);
         btnTIR.setContentAreaFilled(false);
         btnTIR.setBorderPainted(false);
+        
+        btnCalc.setOpaque(false);
+        btnCalc.setContentAreaFilled(false);
+        btnCalc.setBorderPainted(false);
     }
 
     @SuppressWarnings("unchecked")
@@ -80,6 +84,9 @@ public class FormPrincipal extends javax.swing.JFrame {
         btnTasas = new javax.swing.JButton();
         bntVAN = new javax.swing.JButton();
         btnTIR = new javax.swing.JButton();
+        btnCalc = new javax.swing.JButton();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -193,6 +200,31 @@ public class FormPrincipal extends javax.swing.JFrame {
         });
         getContentPane().add(btnTIR);
         btnTIR.setBounds(550, 110, 60, 50);
+
+        btnCalc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/man302.png"))); // NOI18N
+        btnCalc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalcActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCalc);
+        btnCalc.setBounds(40, 420, 60, 50);
+
+        jLabel13.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(239, 241, 194));
+        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel13.setText("Cientifica"); // NOI18N
+        jLabel13.setToolTipText("");
+        getContentPane().add(jLabel13);
+        jLabel13.setBounds(20, 490, 90, 20);
+
+        jLabel14.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(239, 241, 194));
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel14.setText("Calculadora"); // NOI18N
+        jLabel14.setToolTipText("");
+        getContentPane().add(jLabel14);
+        jLabel14.setBounds(20, 470, 90, 20);
 
         jLabel12.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(239, 241, 194));
@@ -376,6 +408,11 @@ public class FormPrincipal extends javax.swing.JFrame {
         formt.setVisible(true);
     }//GEN-LAST:event_btnTIRActionPerformed
 
+    private void btnCalcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcActionPerformed
+        Calculadora formc = new Calculadora();
+        formc.setVisible(true);
+    }//GEN-LAST:event_btnCalcActionPerformed
+
     public static void main(String args[]) {
   
         try {
@@ -410,6 +447,7 @@ public class FormPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton BotonFdeA;
     private javax.swing.JButton BotonPdeA;
     private javax.swing.JButton bntVAN;
+    private javax.swing.JButton btnCalc;
     private javax.swing.JButton btnFlujoEfectivo;
     private javax.swing.JButton btnGrad;
     private javax.swing.JButton btnGradg;
@@ -424,6 +462,8 @@ public class FormPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
