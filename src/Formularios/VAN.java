@@ -80,7 +80,7 @@ public class VAN extends javax.swing.JFrame {
         int eventos =Integer.parseInt(cboEventos.getSelectedItem().toString());
         double interes = Double.parseDouble(txtTMAR.getText().toString());
         double tmar = interes/100;
-        double pa, pf;
+        double pa, pf, mej=0;
 
         //Varibales [2] del Vector
         String Dialognombre2[] = new String [1000];
@@ -122,12 +122,26 @@ public class VAN extends javax.swing.JFrame {
                         pa = Dialogca *((Math.pow((1+tmar), Dialogvida)-1) / (tmar * (Math.pow((1+tmar), Dialogvida))));
                         pf = Dialogvs / (Math.pow((1+tmar), Dialogvida));
                         result[j] = 0 - Dialogci - pa + pf;
-                        JOptionPane.showMessageDialog(null, "El resultado es: "+ result[j]);
-                        
-                         
-                }
+                        //Comparación 1
+                        if (j == 1)
+                        {
+                            mej = result[j];
+                        }
+                        JOptionPane.showMessageDialog(null, "El resultado es: "+ result[j]);                        
+                }      
         }
-        ProyectosVAN formv = new ProyectosVAN(Dialognombre2, Dialogci2, Dialogca2, Dialogvs2, Dialogvida2, eventos);
+        //Comparación
+        for(int j=2; j<=eventos; j++)
+        {
+                if (mej > result[j])
+                JOptionPane.showMessageDialog(null, "El MEJOR es: "+ mej);
+                else
+                    mej = result[j];
+                    JOptionPane.showMessageDialog(null, "El MEJOR es: "+ mej);
+        
+        }
+        
+        ProyectosVAN formv = new ProyectosVAN(Dialognombre2, Dialogci2, Dialogca2, Dialogvs2, Dialogvida2, eventos, result, mej);
         formv.setVisible(true);
     }//GEN-LAST:event_btnComenzarActionPerformed
 

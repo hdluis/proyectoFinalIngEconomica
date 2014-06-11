@@ -36,6 +36,7 @@ void borrarCasillas()
         BotonCalcular = new javax.swing.JButton();
         bntBorrar = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         lblResultado = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         RadioPasado = new javax.swing.JRadioButton();
@@ -103,7 +104,7 @@ void borrarCasillas()
         setResizable(false);
         getContentPane().setLayout(null);
 
-        jLabel4.setText("Cantidad Años");
+        jLabel4.setText("Cantidad Años:");
         getContentPane().add(jLabel4);
         jLabel4.setBounds(120, 120, 90, 20);
 
@@ -120,9 +121,9 @@ void borrarCasillas()
         getContentPane().add(btnReg);
         btnReg.setBounds(280, 180, 60, 40);
 
-        jLabel2.setText("Tasa de Interes");
+        jLabel2.setText("Presente:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(120, 60, 100, 30);
+        jLabel2.setBounds(30, 60, 100, 30);
 
         BotonCalcular.setText("Calcular");
         BotonCalcular.addActionListener(new java.awt.event.ActionListener() {
@@ -145,6 +146,10 @@ void borrarCasillas()
         jLabel3.setText("%");
         getContentPane().add(jLabel3);
         jLabel3.setBounds(190, 90, 30, 30);
+
+        jLabel8.setText("Tasa de Interes:");
+        getContentPane().add(jLabel8);
+        jLabel8.setBounds(120, 60, 100, 30);
 
         lblResultado.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblResultado.setText("Resultado aqui");
@@ -303,6 +308,7 @@ void borrarCasillas()
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField jTextField1;

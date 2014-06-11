@@ -67,7 +67,7 @@ public class FlujoEfectivo extends javax.swing.JFrame {
 
         jLabel3.setText("Numero de Eventos");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(20, 120, 100, 20);
+        jLabel3.setBounds(20, 120, 160, 20);
 
         ComboEventos.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20" }));
         getContentPane().add(ComboEventos);

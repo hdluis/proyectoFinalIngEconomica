@@ -222,7 +222,7 @@ void borrarCasillas()
     }//GEN-LAST:event_bntBorrarActionPerformed
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
-        double inte = 0, presente = 0, perio = 0, comp = 0, resultado = 0, porcen = 0, res1;
+        double inte = 0, presente = 0, perio = 0, perioc = 0, comp = 0, resultado = 0, porcen = 0, res1;
          
         vInt = cmbTasa.getSelectedItem().toString();
         
@@ -230,7 +230,7 @@ void borrarCasillas()
         {
             presente = Double.parseDouble(txtPrincipal.getText().toString());
             inte = Double.parseDouble(txtInteres.getText().toString());
-            perio = Integer.parseInt(cmbTasa.getSelectedItem().toString());
+            perio = Integer.parseInt(txtPeriodos.getText().toString());
             
             porcen = inte/100;
             resultado = presente * (Math.pow((1+porcen), perio));
@@ -240,8 +240,11 @@ void borrarCasillas()
         {
             presente = Double.parseDouble(txtPrincipal.getText().toString());
             inte = Double.parseDouble(txtInteres.getText().toString());
+            perio = Integer.parseInt(txtPeriodos.getText().toString());
+            perioc = Integer.parseInt(txtPeriodoc.getText().toString());
+            porcen = inte/100;
             
-            resultado = presente * (Math.pow((1+(porcen/comp)),Math.abs(perio)));
+            resultado = presente * (Math.pow((1+(porcen/perio)), perioc));
             lblResultado.setText(Double.toString(resultado));
         }
         if (vInt == "Tasa Efectiva Capitalizacion Continua")
